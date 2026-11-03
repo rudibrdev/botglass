@@ -218,11 +218,11 @@ export function collectFindings(
   const jsDependent = byVerdict.get("js-dependent");
   if (jsDependent && jsDependent.length > 0) {
     const detail = jsOnly
-      ? `get ${(jsOnly.missingWords / Math.max(1, jsOnly.renderedWords) * 100).toFixed(0)}% less text than a browser`
-      : "receive an application shell instead of content";
+      ? `${(jsOnly.missingWords / Math.max(1, jsOnly.renderedWords) * 100).toFixed(0)}% of the rendered text never reaches them`
+      : "the raw HTML is an application shell, so they get almost nothing";
     findings.push({
       level: "warn",
-      message: `${jsDependent.join(", ")} ${detail}: the content is rendered by JavaScript, which these crawlers do not run.`,
+      message: `JavaScript-only content for ${jsDependent.join(", ")}: ${detail}, because these crawlers do not run JavaScript.`,
     });
     const first = jsOnly?.sample[0];
     if (first) {
