@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>botglass report — 2 page(s)</title>
+<style>
+:root{color-scheme:light dark;--bg:#fbfbfa;--fg:#16181d;--muted:#5c6470;--line:#e3e4e8;--card:#fff;
+--ok:#0f7b3f;--okbg:#e6f5ec;--warn:#8a5a00;--warnbg:#fdf1d8;--bad:#a3231d;--badbg:#fbe7e6;--info:#125c8a;--infobg:#e4f1fa}
+@media (prefers-color-scheme:dark){:root{--bg:#14161a;--fg:#e9eaee;--muted:#a2a9b6;--line:#2a2e37;--card:#1b1e24;
+--ok:#57d68f;--okbg:#15301f;--warn:#f0c164;--warnbg:#33280f;--bad:#ff8b80;--badbg:#3a1c1a;--info:#7cc4ec;--infobg:#12293a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:18px;margin:0}
+a{color:inherit}
+.sub{color:var(--muted);margin:0 0 24px}
+.counts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.counts li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 12px;font-size:13px}
+.page{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:18px 18px 6px;margin:0 0 20px}
+.page h2{overflow-wrap:anywhere}
+.meta{color:var(--muted);font-size:13px;margin:6px 0 14px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 14px}
+th{text-align:left;font-weight:600;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em;
+border-bottom:1px solid var(--line);padding:0 8px 6px 0}
+td{border-bottom:1px solid var(--line);padding:7px 8px 7px 0;vertical-align:top}
+tr:last-child td{border-bottom:none}
+.badge{display:inline-block;border-radius:6px;padding:1px 8px;font-size:12px;font-weight:600;white-space:nowrap}
+.v-ok{color:var(--ok);background:var(--okbg)}
+.v-js-dependent,.v-cloaked{color:var(--warn);background:var(--warnbg)}
+.v-robots-blocked{color:var(--info);background:var(--infobg)}
+.v-ua-blocked,.v-error{color:var(--bad);background:var(--badbg)}
+.reason{color:var(--muted);font-size:13px}
+.findings{list-style:none;padding:0;margin:0 0 16px}
+.findings li{padding:8px 12px;border-radius:8px;margin:0 0 6px;font-size:14px;background:var(--infobg);color:var(--info)}
+.findings li.warn{background:var(--warnbg);color:var(--warn)}
+.findings li.error{background:var(--badbg);color:var(--bad)}
+details{margin:0 0 14px;font-size:14px}
+summary{cursor:pointer;color:var(--muted)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;overflow-wrap:anywhere}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px;margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+<h1>botglass 0.1.0</h1>
+<p class="sub">2 page(s) fetched as a browser and as 8 crawlers · render on · 2026-11-03T16:13:27.824Z</p>
+<ul class="counts"><li>8 × <span class="badge v-ok" title="server-rendered and allowed">ok</span></li><li>8 × <span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></li></ul>
+<p class="meta">Gate: passed (no failing verdicts).</p>
+<section class="page">
+  <h2><a href="https://excalidraw.com/">https://excalidraw.com/</a></h2>
+  <p class="meta">HTTP 200 · 3 words in the raw HTML · rendered 82 words · checked 2026-11-03T16:13:33.282Z</p>
+  <table>
+    <thead><tr><th>crawler</th><th>status</th><th>words</th><th>verdict</th><th>why</th></tr></thead>
+    <tbody>
+<tr><td><code>GPTBot</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>OAI-SearchBot</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>ChatGPT-User</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>ClaudeBot</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>PerplexityBot</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>CCBot</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>Googlebot</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+<tr><td><code>meta-externalagent</code></td><td>200</td><td>3</td><td><span class="badge v-js-dependent" title="content needs JavaScript, which this crawler does not run">js-dependent</span></td><td class="reason">56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)</td></tr>
+    </tbody>
+  </table>
+  <ul class="findings">
+<li class="warn">GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, CCBot, Googlebot, meta-externalagent get 56% less text than a browser: the content is rendered by JavaScript, which these crawlers do not run.</li>
+<li class="">First missing sentence: &quot;Your drawings are saved in your browser&#39;s storage.&quot;</li>
+<li class="">Only 3 words of text in the raw HTML. Thin pages are hard for any crawler to make sense of.</li>
+  </ul>
+  <details><summary>Text that only exists after JavaScript runs (45 words missing)</summary><ul><li>Your drawings are saved in your browser&#39;s storage.</li><li>Browser storage can be cleared unexpectedly.</li><li>Save your work to a file regularly to avoid losing it.</li><li>Pick a tool &amp; Start drawing!</li><li>To move canvas, hold Scroll wheel or Space while dragging, or use the hand tool</li></ul></details>
+  <p class="meta">robots.txt <code>https://excalidraw.com/robots.txt</code> (HTTP 200) is read for each bot.</p>
+</section>
+<section class="page">
+  <h2><a href="https://nextjs.org/">https://nextjs.org/</a></h2>
+  <p class="meta">HTTP 200 · 653 words in the raw HTML · rendered 596 words · checked 2026-11-03T16:13:40.418Z</p>
+  <table>
+    <thead><tr><th>crawler</th><th>status</th><th>words</th><th>verdict</th><th>why</th></tr></thead>
+    <tbody>
+<tr><td><code>GPTBot</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>OAI-SearchBot</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>ChatGPT-User</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>ClaudeBot</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>PerplexityBot</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>CCBot</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>Googlebot</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+<tr><td><code>meta-externalagent</code></td><td>200</td><td>653</td><td><span class="badge v-ok" title="server-rendered and allowed">ok</span></td><td class="reason">server-rendered content, bot allowed</td></tr>
+    </tbody>
+  </table>
+  <ul class="findings">
+<li class="">No crawler-visible problem found on this URL.</li>
+  </ul>
+  <details><summary>Text that only exists after JavaScript runs (18 words missing)</summary><ul><li>This site uses tracking technologies.</li><li>You may opt in or opt out of the use of these technologies.</li></ul></details>
+  <p class="meta">no robots.txt at <code>https://nextjs.org/robots.txt</code> (HTTP 404), so everything is allowed.</p>
+</section>
+<footer>
+Verdicts are heuristics unless marked otherwise: <strong>js-dependent</strong> compares the raw HTML with a
+rendered DOM, <strong>cloaked</strong> compares word similarity against a plain-browser fetch. User-Agent strings
+are published by each vendor and dated in the README. Generated 2026-11-03T16:13:40.418Z.
+</footer>
+</main>
+</body>
+</html>

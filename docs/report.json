@@ -1,0 +1,593 @@
+{
+  "tool": "botglass",
+  "version": "0.1.0",
+  "startedAt": "2026-11-03T16:13:27.824Z",
+  "finishedAt": "2026-11-03T16:13:40.418Z",
+  "pages": [
+    {
+      "url": "https://excalidraw.com/",
+      "fetchedAt": "2026-11-03T16:13:33.282Z",
+      "httpStatus": 200,
+      "robotsUrl": "https://excalidraw.com/robots.txt",
+      "robotsStatus": 200,
+      "baseline": {
+        "bot": "baseline",
+        "status": 200,
+        "finalUrl": "https://excalidraw.com/",
+        "redirects": [],
+        "durationMs": 21,
+        "htmlBytes": 6856,
+        "title": "Excalidraw Whiteboard",
+        "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+        "text": "Excalidraw Whiteboard\nExcalidraw",
+        "wordCount": 3,
+        "robots": {
+          "available": true,
+          "allowed": true,
+          "rule": "Allow: /$",
+          "robotsUrl": "https://excalidraw.com/robots.txt",
+          "status": 200
+        },
+        "similarityToBaseline": null,
+        "error": null
+      },
+      "bots": [
+        {
+          "bot": "GPTBot",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 14,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "OAI-SearchBot",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 12,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "ChatGPT-User",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 10,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "ClaudeBot",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 16,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "PerplexityBot",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 14,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "CCBot",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 25,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "Googlebot",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 23,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "meta-externalagent",
+          "status": 200,
+          "finalUrl": "https://excalidraw.com/",
+          "redirects": [],
+          "durationMs": 14,
+          "htmlBytes": 6856,
+          "title": "Excalidraw Whiteboard",
+          "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+          "text": "Excalidraw Whiteboard\nExcalidraw",
+          "wordCount": 3,
+          "robots": {
+            "available": true,
+            "allowed": true,
+            "rule": "Allow: /$",
+            "robotsUrl": "https://excalidraw.com/robots.txt",
+            "status": 200
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        }
+      ],
+      "render": {
+        "ok": true,
+        "error": null,
+        "text": "Excalidraw\nYour drawings are saved in your browser's storage.\nBrowser storage can be cleared unexpectedly.\nSave your work to a file regularly to avoid losing it.\nOpen\nCtrl+O\nHelp\n?\nLive collaboration...\nSign up\nExport, preferences, languages, ...\nPick a tool & Start drawing!\nTo move canvas, hold Scroll wheel or Space while dragging, or use the hand tool\nShapes\nV\nR\nD\nO\nA\nL\nP\nT\nN\nE\nTry Excalidraw+\n14-day free trial\nShare\nCanvas actions\n100%\nShortcuts & help",
+        "wordCount": 82,
+        "title": "Excalidraw Whiteboard"
+      },
+      "jsOnly": {
+        "renderedWords": 80,
+        "rawWords": 3,
+        "missingWords": 45,
+        "ratio": 0.5625,
+        "sample": [
+          "Your drawings are saved in your browser's storage.",
+          "Browser storage can be cleared unexpectedly.",
+          "Save your work to a file regularly to avoid losing it.",
+          "Pick a tool & Start drawing!",
+          "To move canvas, hold Scroll wheel or Space while dragging, or use the hand tool"
+        ]
+      },
+      "verdicts": [
+        {
+          "bot": "GPTBot",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "OAI-SearchBot",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "ChatGPT-User",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "ClaudeBot",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "PerplexityBot",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "CCBot",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "Googlebot",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        },
+        {
+          "bot": "meta-externalagent",
+          "verdict": "js-dependent",
+          "reason": "56% of the rendered text is missing from the raw HTML (3 of 80 words server-rendered)",
+          "confidence": "measured"
+        }
+      ],
+      "findings": [
+        {
+          "level": "warn",
+          "message": "GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, CCBot, Googlebot, meta-externalagent get 56% less text than a browser: the content is rendered by JavaScript, which these crawlers do not run."
+        },
+        {
+          "level": "info",
+          "message": "First missing sentence: \"Your drawings are saved in your browser's storage.\""
+        },
+        {
+          "level": "info",
+          "message": "Only 3 words of text in the raw HTML. Thin pages are hard for any crawler to make sense of."
+        }
+      ]
+    },
+    {
+      "url": "https://nextjs.org/",
+      "fetchedAt": "2026-11-03T16:13:40.418Z",
+      "httpStatus": 200,
+      "robotsUrl": "https://nextjs.org/robots.txt",
+      "robotsStatus": 404,
+      "baseline": {
+        "bot": "baseline",
+        "status": 200,
+        "finalUrl": "https://nextjs.org/",
+        "redirects": [],
+        "durationMs": 119,
+        "htmlBytes": 261638,
+        "title": "Next.js by Vercel - The React Framework",
+        "description": "Next.js by Vercel is the full-stack React framework for the web.",
+        "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+        "wordCount": 653,
+        "robots": {
+          "available": false,
+          "allowed": true,
+          "rule": null,
+          "robotsUrl": "https://nextjs.org/robots.txt",
+          "status": 404
+        },
+        "similarityToBaseline": null,
+        "error": null
+      },
+      "bots": [
+        {
+          "bot": "GPTBot",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 89,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "OAI-SearchBot",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 89,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "ChatGPT-User",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 50,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "ClaudeBot",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 44,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "PerplexityBot",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 48,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "CCBot",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 61,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "Googlebot",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 63,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        },
+        {
+          "bot": "meta-externalagent",
+          "status": 200,
+          "finalUrl": "https://nextjs.org/",
+          "redirects": [],
+          "durationMs": 54,
+          "htmlBytes": 261638,
+          "title": "Next.js by Vercel - The React Framework",
+          "description": "Next.js by Vercel is the full-stack React framework for the web.",
+          "text": "Next.js by Vercel - The React Framework\nLatest\nThe framework for building agents\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nDocs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch… ⌘K Ask AI Ask AI\nSearch… ⌘K\nDocs Learn Showcase Blog Templates Deploy GitHub Vercel OSS\nLatest\neve\nFrameworks\nSvelte\nNuxt\nNitro\nSDKs\nAI SDK\nChat SDK\nFlags SDK\nWorkflow SDK\nOther\nTurborepo\nshadcn/ui\nSWR\njust-bash\ndeepsec\nSelect a display theme: system light dark\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$ npx create-next-app@latest npx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations → Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming → Instantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components → Add components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching → Make your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support → Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering → Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions → Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers → Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy → Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts → Create routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16 → The power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact → The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack → An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler → An extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\nFor performance, efficiency and developer experience . Next.js is trusted by some of the biggest names on the web.\n“ It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence. ”\nJonathan Lemon Software Engineering Manager\n“ With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals. ”\nSenior Software Engineer, Frontend\nGet started in seconds\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\nDeploy Now All templates\nNext.js Boilerplate A Next.js application and a Serverless Function API Route. examples/nextjs\nChatbot A full-featured, hackable Next.js AI chatbot built by Vercel. examples/chatbot\nPlatforms Starter Kit A template for site builders and low-code tools. vercel/platforms\nISR Blog Incremental Static Regeneration blog with Next.js and WordPress. examples/cms-wordpress\nNext.js Commerce Starter kit for high-performance ecommerce sites. vercel/commerce\nReady to deploy?\nGet started Learn Next.js\nGet started\nDocs Support Policy Learn Showcase Blog Team Analytics Next.js Conf Previews Evals\nMore\nNext.js Commerce Contact Sales Community GitHub Releases Telemetry Governance Ecosystem Working Group\nAbout Vercel\nAbout Vercel Next.js + Vercel Open Source Software GitHub Bluesky X\nLegal\nPrivacy Policy Cookie Preferences\nSubscribe to our newsletter\nSubscribe\nStay updated on new releases and features, guides, and case studies.\nSelect a display theme: system light dark",
+          "wordCount": 653,
+          "robots": {
+            "available": false,
+            "allowed": true,
+            "rule": null,
+            "robotsUrl": "https://nextjs.org/robots.txt",
+            "status": 404
+          },
+          "similarityToBaseline": 1,
+          "error": null
+        }
+      ],
+      "render": {
+        "ok": true,
+        "error": null,
+        "text": "Docs\nLearn\nShowcase\nBlog\nTemplates\nDeploy\nSearch…\n⌘K\nAsk AI\nThe React Framework for the Web\nUsed by the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.\n$\nnpx create-next-app@latest\nEverything you need to build great products on the web\nBuilt-in Optimizations\n→\nAutomatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.\nDynamic HTML Streaming\n→\nInstantly stream UI from the server, integrated with the App Router and React Suspense.\nReact Server Components\n→\nAdd components without sending additional client-side JavaScript. Built on the latest React features.\nData Fetching\n→\nMake your React component async and await your data. Next.js supports both server and client data fetching.\nCSS Support\n→\nStyle your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.\nClient and Server Rendering\n→\nFlexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.\nServer Actions\n→\nRun server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.\nRoute Handlers\n→\nBuild API endpoints to securely connect with third-party services for handling auth or listening for webhooks.\nProxy\n→\nTake control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.\nAdvanced Routing & Nested Layouts\n→\nCreate routes using the file system, including support for more advanced routing patterns and UI layouts.\nNext.js 16\n→\nThe power of full-stack to the frontend.\nRead the release notes.\nBuilt on a foundation of fast, production-grade tooling\nReact\n→\nThe library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.\nTurbopack\n→\nAn incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.\nSpeedy Web Compiler\n→\nAn extensible Rust-based platform for the next generation of fast developer tools, and can be used for both compilation and minification.\nThe framework of choice\nwhen it matters\n\nFor performance, efficiency and developer experience. Next.js is trusted by some of the biggest names on the web.\n\n“It’s just a pity we didn’t go sooner. Next.js and Vercel make our developers happier, make us go to market quicker, and let us move with confidence.”\nJonathan Lemon\nSoftware Engineering Manager\n“With Next.js, we now consistently average 0.09 or lower for Cumulative Layout Shift, placing our site in the top tier for user experience and Core Web Vitals.”\nSenior Software Engineer, Frontend\nGet started in seconds\n\nJumpstart your Next.js development with pre-built solutions from Vercel and our community.\n\nDeploy Now\nAll templates\nNext.js Boilerplate\nA Next.js application and a Serverless Function API Route.\nexamples/nextjs\nChatbot\nA full-featured, hackable Next.js AI chatbot built by Vercel.\nexamples/chatbot\nPlatforms Starter Kit\nA template for site builders and low-code tools.\nvercel/platforms\nISR Blog\nIncremental Static Regeneration blog with Next.js and WordPress.\nexamples/cms-wordpress\nNext.js Commerce\nStarter kit for high-performance ecommerce sites.\nvercel/commerce\nReady to deploy?\nGet started\nLearn Next.js\nGet started\nDocs\nSupport Policy\nLearn\nShowcase\nBlog\nTeam\nAnalytics\nNext.js Conf\nPreviews\nEvals\nMore\nNext.js Commerce\nContact Sales\nCommunity\nGitHub\nReleases\nTelemetry\nGovernance\nEcosystem Working Group\nAbout Vercel\nAbout Vercel\nNext.js + Vercel\nOpen Source Software\nGitHub\nBluesky\nX\nLegal\nPrivacy Policy\nCookie Preferences\nSubscribe to our newsletter\nSubscribe\n\nStay updated on new releases and features, guides, and case studies.\n\nSelect a display theme:\nsystem\nlight\ndark\nThis site uses tracking technologies. You may opt in or opt out of the use of these technologies.\nDeny\nAccept all\nConsent Settings",
+        "wordCount": 596,
+        "title": "Next.js by Vercel - The React Framework"
+      },
+      "jsOnly": {
+        "renderedWords": 619,
+        "rawWords": 678,
+        "missingWords": 18,
+        "ratio": 0.029079159935379646,
+        "sample": [
+          "This site uses tracking technologies.",
+          "You may opt in or opt out of the use of these technologies."
+        ]
+      },
+      "verdicts": [
+        {
+          "bot": "GPTBot",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "OAI-SearchBot",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "ChatGPT-User",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "ClaudeBot",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "PerplexityBot",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "CCBot",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "Googlebot",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        },
+        {
+          "bot": "meta-externalagent",
+          "verdict": "ok",
+          "reason": "server-rendered content, bot allowed",
+          "confidence": "measured"
+        }
+      ],
+      "findings": [
+        {
+          "level": "info",
+          "message": "No crawler-visible problem found on this URL."
+        }
+      ]
+    }
+  ],
+  "options": {
+    "render": true,
+    "maxPages": 10,
+    "timeoutMs": 30000,
+    "concurrency": 1,
+    "checkRobots": true,
+    "failOn": [],
+    "maxJsOnly": null,
+    "bots": [
+      "GPTBot",
+      "OAI-SearchBot",
+      "ChatGPT-User",
+      "ClaudeBot",
+      "PerplexityBot",
+      "CCBot",
+      "Googlebot",
+      "meta-externalagent"
+    ]
+  },
+  "counts": {
+    "ok": 8,
+    "js-dependent": 8,
+    "cloaked": 0,
+    "robots-blocked": 0,
+    "ua-blocked": 0,
+    "error": 0
+  },
+  "gate": {
+    "failed": false,
+    "reasons": []
+  },
+  "warnings": []
+}
