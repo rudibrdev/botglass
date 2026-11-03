@@ -162,11 +162,29 @@ export function decideVerdict(input: VerdictInput): BotVerdict {
     };
   }
 
-  if (jsOnly && jsOnly.renderedWords >= 50 && jsOnly.rawWords < jsOnly.renderedWords * 0.5) {
+  if (
+    baseline.status !== null &&
+    baseline.status < 400 &&
+    baseline.wordCount >= 30 &&
+    bot.wordCount === 0
+  ) {
+    return {
+      bot: name,
+      verdict: "cloaked",
+      reason: `HTTP ${bot.status} with no readable text, while a browser gets ${baseline.wordCount} words`,
+      confidence: "measured",
+    };
+  }
+
+  if (jsOnly && jsOnly.renderedWords >= 50 && bot.wordCount < jsOnly.renderedWords * 0.5) {
+    const missing = Math.max(
+      0,
+      Math.round((1 - bot.wordCount / Math.max(1, jsOnly.renderedWords)) * 100),
+    );
     return {
       bot: name,
       verdict: "js-dependent",
-      reason: `${(jsOnly.missingWords / jsOnly.renderedWords * 100).toFixed(0)}% of the rendered text is missing from the raw HTML (${jsOnly.rawWords} of ${jsOnly.renderedWords} words server-rendered)`,
+      reason: `raw HTML carries ${bot.wordCount} of the ${jsOnly.renderedWords} words a browser renders (${missing}% missing)`,
       confidence: "measured",
     };
   }
@@ -217,8 +235,8 @@ export function collectFindings(
 
   const jsDependent = byVerdict.get("js-dependent");
   if (jsDependent && jsDependent.length > 0) {
-    const detail = jsOnly
-      ? `${(jsOnly.missingWords / Math.max(1, jsOnly.renderedWords) * 100).toFixed(0)}% of the rendered text never reaches them`
+    const detail = jsOnly && jsOnly.renderedWords > 0
+      ? `${Math.max(0, Math.round((1 - baseline.wordCount / jsOnly.renderedWords) * 100))}% of the text a browser renders (${baseline.wordCount} of ${jsOnly.renderedWords} words) never reaches them`
       : "the raw HTML is an application shell, so they get almost nothing";
     findings.push({
       level: "warn",
@@ -227,6 +245,13 @@ export function collectFindings(
     const first = jsOnly?.sample[0];
     if (first) {
       findings.push({ level: "info", message: `First missing sentence: "${first}"` });
+    }
+    if (jsDependent.includes("Googlebot")) {
+      findings.push({
+        level: "info",
+        message:
+          "Googlebot is the exception: it renders JavaScript before indexing, so its row is a lower bound for Google. GPTBot, ClaudeBot, PerplexityBot and the other AI fetchers stop at the raw HTML.",
+      });
     }
   }
 

@@ -27,16 +27,29 @@ node dist/src/cli.js https://example.com
 
 ## What it prints
 
-Real output, run against excalidraw.com and nextjs.org:
+Real output, from `botglass https://excalidraw.com https://nextjs.org --render` (the
+nextjs.org rows are trimmed):
 
 ```
-botglass 0.1.0  2 page(s), 8 bots, render on
+botglass 0.1.1  2 page(s), 8 bots, render on
 
 https://excalidraw.com/
   HTTP 200, 3 words in raw HTML, 80 words rendered
-  bot             status  words  verdict         note
-  GPTBot          200     3      js-dependent    56% of the rendered text is missing from the raw HTML
-  ClaudeBot       200     3      js-dependent    ...
+  bot                status  words  verdict         note
+  GPTBot             200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  OAI-SearchBot      200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  ChatGPT-User       200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  ClaudeBot          200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  PerplexityBot      200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  CCBot              200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  Googlebot          200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+  meta-externalagent 200     3      js-dependent    raw HTML carries 3 of the 80 words a browser renders (96% missing)
+
+https://nextjs.org/
+  HTTP 200, 653 words in raw HTML, 619 words rendered
+  GPTBot             200     653    ok              server-rendered content, bot allowed
+  ClaudeBot          200     653    ok              server-rendered content, bot allowed
+  ...
 ```
 
 The exit code stays 0 until you ask for a gate with `--fail-on` or `--max-js-only`.
@@ -64,8 +77,9 @@ User-Agent strings come from each vendor's public documentation and the `docs` U
 
 ## Options
 
-```
+```bash
 botglass <url> [options]
+botglass <url> <url> [options]   # several URLs in one run
 
 --sitemap <url|file>   Audit every URL in a sitemap (index files are followed)
 --urls <file>          Audit a newline-separated URL list (# comments allowed)
@@ -140,7 +154,7 @@ report you can archive; `--html` writes one a human can read without the tool.
 
 ```bash
 npm install
-npm test              # 65 tests: unit, fixture-server integration, real CLI subprocess
+npm test              # 70 tests: unit, fixture-server integration, real CLI subprocess
 npm run build         # tsc -> dist/
 ```
 

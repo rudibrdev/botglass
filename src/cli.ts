@@ -22,10 +22,10 @@ import { VERSION } from "./version.js";
 const USAGE = `
 botglass ${VERSION} — see your site exactly as AI crawlers see it
 
-  botglass <url> [options]
+  botglass <url...> [options]
 
 What it does
-  Fetches one URL as a normal browser and as each AI/search crawler, compares
+  Fetches each URL as a normal browser and as each AI/search crawler, compares
   the text a crawler actually receives with what a browser gets, checks that
   crawler's robots.txt rule, and prints one verdict per bot.
 
@@ -225,9 +225,16 @@ async function main(argv: string[]): Promise<void> {
   } else if (urlsArg) {
     urls.push(...(await readUrlList(urlsArg)).slice(0, maxPages));
   } else {
-    const first = positionals[0];
-    if (!first) fail("a URL is required");
-    urls.push(/^https?:\/\//i.test(first) ? first : `https://${first}`);
+    if (positionals.length === 0) fail("a URL is required");
+    for (const positional of positionals) {
+      urls.push(/^https?:\/\//i.test(positional) ? positional : `https://${positional}`);
+    }
+    if (urls.length > maxPages) {
+      warnings.push(
+        `${positionals.length} URLs given, auditing the first ${maxPages} (raise --max-pages for more)`,
+      );
+      urls.length = maxPages;
+    }
   }
 
   const options: AuditOptions = {

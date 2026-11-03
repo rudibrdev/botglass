@@ -104,8 +104,9 @@ function renderPage(page: PageReport): string {
       : `no robots.txt at <code>${escapeHtml(page.robotsUrl)}</code> (HTTP ${page.robotsStatus ?? "no response"}), so everything is allowed.`
     : "";
 
-  const rendered = page.render?.ok
-    ? ` · rendered ${page.render.wordCount} words`
+  const renderedWords = page.jsOnly?.renderedWords ?? page.render?.wordCount;
+  const rendered = page.render?.ok && renderedWords !== undefined
+    ? ` · rendered ${renderedWords} words`
     : "";
 
   return `<section class="page">

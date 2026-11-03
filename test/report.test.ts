@@ -4,6 +4,7 @@ import { renderHtml, escapeHtml } from "../src/report/html.js";
 import { renderRunText, summarise } from "../src/report/text.js";
 import { buildRunReport } from "../src/report/run.js";
 import type { PageReport, RunOptions } from "../src/types.js";
+import { VERSION } from "../src/version.js";
 
 const options: RunOptions = {
   render: true,
@@ -94,11 +95,34 @@ test("the HTML report states the render status and gate result", () => {
 
 test("the text report shows one row per bot with its verdict", () => {
   const text = renderRunText(report(), { color: false, showSamples: true });
-  assert.match(text, /botglass 0\.1\.0/);
+  assert.match(text, new RegExp(`botglass ${VERSION.replace(/\./g, "\\.")}`));
   assert.match(text, /GPTBot/);
   assert.match(text, /js-dependent/);
   assert.match(text, /Only after JS\./);
   assert.doesNotMatch(text, /\u001b\[/, "no escape codes when color is off");
+});
+
+test("the bot column widens for long crawler names", () => {
+  const run = report();
+  const page = run.pages[0];
+  assert.ok(page);
+  page.verdicts = [
+    {
+      bot: "meta-externalagent",
+      verdict: "ok",
+      reason: "server-rendered content, bot allowed",
+      confidence: "measured",
+    },
+  ];
+  const first = page.bots[0];
+  assert.ok(first);
+  page.bots = [{ ...first, bot: "meta-externalagent" }];
+  const text = renderRunText(run, { color: false });
+  assert.match(
+    text,
+    /meta-externalagent 200/,
+    "an 18-character name must not run into the status column",
+  );
 });
 
 test("summarise lists only verdicts that occurred", () => {

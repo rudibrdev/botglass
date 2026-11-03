@@ -34,7 +34,8 @@ function pad(text: string, width: number): string {
 function statusLabel(page: PageReport): string {
   const status = page.httpStatus === null ? "no response" : `HTTP ${page.httpStatus}`;
   const words = page.baseline.wordCount;
-  const rendered = page.render?.ok ? `, ${page.render.wordCount} words rendered` : "";
+  const renderedWords = page.jsOnly?.renderedWords ?? page.render?.wordCount;
+  const rendered = page.render?.ok && renderedWords !== undefined ? `, ${renderedWords} words rendered` : "";
   return `${status}, ${words} words in raw HTML${rendered}`;
 }
 
@@ -46,11 +47,13 @@ export interface TextReportOptions {
 
 export function renderPageText(page: PageReport, options: TextReportOptions = {}): string {
   const color = options.color === true;
+  // Wide enough for the longest crawler name plus one separating space.
+  const nameWidth = Math.max(18, ...page.verdicts.map((v) => v.bot.length + 1));
   const lines: string[] = [];
   lines.push(paint(page.url, BOLD, color));
   lines.push(`  ${statusLabel(page)}`);
 
-  const header = `  ${pad("bot", 18)}${pad("status", 8)}${pad("words", 7)}${pad("verdict", 16)}note`;
+  const header = `  ${pad("bot", nameWidth)}${pad("status", 8)}${pad("words", 7)}${pad("verdict", 16)}note`;
   lines.push(paint(header, DIM, color));
 
   for (const verdict of page.verdicts) {
@@ -58,7 +61,7 @@ export function renderPageText(page: PageReport, options: TextReportOptions = {}
     const status = bot?.status === null || bot?.status === undefined ? "-" : String(bot.status);
     const words = bot ? String(bot.wordCount) : "-";
     lines.push(
-      `  ${pad(verdict.bot, 18)}${pad(status, 8)}${pad(words, 7)}${paint(
+      `  ${pad(verdict.bot, nameWidth)}${pad(status, 8)}${pad(words, 7)}${paint(
         pad(verdict.verdict, 16),
         COLORS[verdict.verdict],
         color,

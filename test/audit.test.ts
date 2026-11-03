@@ -1,6 +1,6 @@
 import { after, before, test } from "node:test";
 import assert from "node:assert/strict";
-import { auditUrl, decideVerdict } from "../src/audit.js";
+import { auditUrl, collectFindings, decideVerdict } from "../src/audit.js";
 import { BASELINE, BOTS, selectBots } from "../src/bots.js";
 import type { BotResult, JsOnlyReport, RenderResult } from "../src/types.js";
 import { startFixture, type Fixture } from "./fixture.js";
@@ -219,4 +219,47 @@ test("the shell heuristic never overrides a measured render", () => {
   const ok = decideVerdict({ bot: fakeBot(), baseline, jsOnly: null, spaShell: true });
   assert.equal(ok.verdict, "js-dependent");
   assert.equal(ok.confidence, "heuristic");
+});
+
+test("an empty 200 to the bot while a browser gets text is cloaked", () => {
+  const empty = fakeBot({ wordCount: 0, text: "", similarityToBaseline: 0 });
+  const verdict = decideVerdict({ bot: empty, baseline, jsOnly: null, ...noShell });
+  assert.equal(verdict.verdict, "cloaked");
+  assert.equal(verdict.confidence, "measured", "this is an HTTP fact, not a similarity guess");
+  assert.match(verdict.reason, /no readable text/);
+});
+
+test("the js-dependent reason quotes the same numbers as the measurement", () => {
+  const jsOnly: JsOnlyReport = {
+    renderedWords: 200,
+    rawWords: 20,
+    missingWords: 150,
+    ratio: 0.75,
+    sample: [],
+  };
+  const thin = fakeBot({ wordCount: 20 });
+  const verdict = decideVerdict({ bot: thin, baseline, jsOnly, ...noShell });
+  assert.equal(verdict.verdict, "js-dependent");
+  assert.match(verdict.reason, /20 of the 200 words/, verdict.reason);
+  assert.match(verdict.reason, /90% missing/, verdict.reason);
+});
+
+test("the Googlebot row says that Googlebot also renders JavaScript", () => {
+  const findings = collectFindings(
+    baseline,
+    [
+      {
+        bot: "Googlebot",
+        verdict: "js-dependent",
+        reason: "raw HTML carries 3 of the 80 words a browser renders (96% missing)",
+        confidence: "measured",
+      },
+    ],
+    null,
+    null,
+  );
+  assert.ok(
+    findings.some((f) => /Googlebot is the exception/.test(f.message)),
+    "without this caveat the Googlebot row reads as if Google cannot see the page either",
+  );
 });

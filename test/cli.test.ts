@@ -12,6 +12,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 import { startFixture, type Fixture } from "./fixture.js";
+import { VERSION } from "../src/version.js";
 
 const run = promisify(execFile);
 const cli = fileURLToPath(new URL("../src/cli.js", import.meta.url));
@@ -50,7 +51,7 @@ after(async () => {
 test("a single URL prints a report and exits 0", async () => {
   const result = await botglass(`${fixture.base}/ssr`, "--bots", "GPTBot", "--delay", "0", "--no-color");
   assert.equal(result.code, 0, result.stderr);
-  assert.match(result.stdout, /botglass 0\.1\.0/);
+  assert.match(result.stdout, new RegExp(`botglass ${VERSION.replace(/\./g, "\\.")}`));
   assert.match(result.stdout, /GPTBot/);
   assert.match(result.stdout, /\bok\b/);
   assert.match(result.stdout, /Totals: 1 ok/);
@@ -117,6 +118,22 @@ test("clean pages do not fail a gate that only names other verdicts", async () =
   );
   assert.equal(result.code, 0, result.stderr);
   assert.equal(result.stdout, "");
+});
+
+test("several URLs on the command line are all audited", async () => {
+  const result = await botglass(
+    `${fixture.base}/ssr`,
+    `${fixture.base}/thin`,
+    "--bots",
+    "GPTBot",
+    "--delay",
+    "0",
+    "--no-color",
+  );
+  assert.equal(result.code, 0, result.stderr);
+  assert.match(result.stdout, /2 page\(s\)/);
+  assert.match(result.stdout, new RegExp(`${fixture.base}/ssr`));
+  assert.match(result.stdout, new RegExp(`${fixture.base}/thin`));
 });
 
 test("--urls audits a file of pages", async () => {

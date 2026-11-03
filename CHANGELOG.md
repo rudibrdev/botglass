@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.1 — 2026-11-03
+
+- Several URLs on one command line are all audited instead of the extras being dropped.
+- The `js-dependent` line and the page header quote the same word counts (the header used a
+  second tokenizer, so it could say 82 rendered next to a note about 80).
+- A bot that gets an empty 200 while a browser gets text is now `cloaked` instead of `ok`.
+- The Googlebot row says that Googlebot also renders JavaScript, so it is not mistaken for
+  proof that Google cannot see the page.
+- The crawler column widens for `meta-externalagent`; it no longer runs into the status column.
+- 70 tests.
+
 ## 0.1.0 — 2026-11-03
 
 First release.
