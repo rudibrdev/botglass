@@ -46,7 +46,12 @@ test("js-only report computes the missing share of the rendered page", () => {
   assert.equal(report.rawWords, words(RAW).length);
   assert.equal(report.renderedWords, words(RENDERED).length);
   assert.ok(report.missingWords > 0);
-  assert.ok(report.ratio > 0.3 && report.ratio < 0.9, `ratio was ${report.ratio}`);
+  assert.equal(
+    Math.round(report.ratio * 100),
+    Math.round((1 - report.rawWords / report.renderedWords) * 100),
+    "ratio is the share of rendered words the raw HTML does not have, so it matches the report",
+  );
+  assert.ok(report.ratio > 0.3, `ratio was ${report.ratio}`);
   assert.equal(report.sample.length, 2);
 });
 

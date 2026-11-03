@@ -88,7 +88,7 @@ export interface JsOnlyReport {
   renderedWords: number;
   rawWords: number;
   missingWords: number;
-  /** missingWords / renderedWords, 0..1. */
+  /** Share of the rendered words that are not in the raw HTML, 0..1. */
   ratio: number;
   /** Up to five sentences only present after rendering. */
   sample: string[];

@@ -5,6 +5,9 @@
 - Several URLs on one command line are all audited instead of the extras being dropped.
 - The `js-dependent` line and the page header quote the same word counts (the header used a
   second tokenizer, so it could say 82 rendered next to a note about 80).
+- `--max-js-only` now measures the share of rendered words missing from the raw HTML, the
+  same number the report prints, instead of a sentence-overlap score that said 56% while the
+  report said 96%.
 - A bot that gets an empty 200 while a browser gets text is now `cloaked` instead of `ok`.
 - The Googlebot row says that Googlebot also renders JavaScript, so it is not mistaken for
   proof that Google cannot see the page.

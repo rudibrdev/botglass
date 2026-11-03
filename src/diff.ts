@@ -123,7 +123,8 @@ export function jsOnlyReport(rawText: string, renderedText: string): JsOnlyRepor
   const missingWords = missing.reduce((sum, s) => sum + words(s).length, 0);
   const renderedWords = words(renderedText).length;
   const rawWords = words(rawText).length;
-  const ratio = renderedWords === 0 ? 0 : Math.min(1, missingWords / renderedWords);
+  const ratio =
+    renderedWords === 0 ? 0 : Math.min(1, Math.max(0, 1 - rawWords / renderedWords));
   return {
     renderedWords,
     rawWords,
