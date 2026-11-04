@@ -6,6 +6,7 @@
  */
 
 import { adviceForPage } from "../src/advice.js";
+import type { UsageDecision } from "../src/aipref.js";
 import type { BotResult, BotVerdict, JsOnlyReport, PageReport, RenderResult, Verdict } from "../src/types.js";
 
 export function makeBot(bot: string, status: number | null = 200, wordCount = 100): BotResult {
@@ -35,7 +36,10 @@ export interface PageInput {
   botStatuses?: Record<string, number | null>;
   jsOnly?: JsOnlyReport | null;
   render?: RenderResult | null;
+  usage?: UsageDecision;
 }
+
+export const NO_USAGE: UsageDecision = { signals: [], trainAi: null, source: null, malformed: [] };
 
 export function makePage(input: PageInput = {}): PageReport {
   const verdicts: BotVerdict[] = (input.verdicts ?? [["GPTBot", "ok"]]).map(([bot, verdict]) => ({
@@ -59,6 +63,7 @@ export function makePage(input: PageInput = {}): PageReport {
     jsOnly: input.jsOnly ?? null,
     verdicts,
     findings: [],
+    usage: input.usage ?? NO_USAGE,
   } as unknown as PageReport;
   return { ...page, advice: adviceForPage(page) };
 }

@@ -6,6 +6,7 @@
  */
 
 import type { BaselineDiff } from "./baseline.js";
+import type { UsageDecision } from "./aipref.js";
 
 export type Verdict =
   | "ok"
@@ -117,6 +118,8 @@ export interface PageReport {
   jsOnly: JsOnlyReport | null;
   verdicts: BotVerdict[];
   findings: Finding[];
+  /** Declared AI usage preference from robots.txt `Content-Usage`, if any. */
+  usage: UsageDecision;
   /** What to change, most useful first. Empty when every bot is fine. */
   advice: string[];
 }

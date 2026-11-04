@@ -9,6 +9,11 @@ one actually receives, checks robots.txt per bot, and prints one verdict per cra
 
 No account, no API key, no dashboard, no telemetry. One command, plain HTTP.
 
+It also reads the new **`Content-Usage`** signal in robots.txt — the shared AI usage
+preference Anthropic, OpenAI, Google and Microsoft backed in November 2026 — shows what you
+declared for a page, and points out when the declaration contradicts what robots.txt
+actually allows.
+
 ## Hand it to your agent
 
 Two ways. As a shell command your agent runs:
@@ -102,6 +107,31 @@ The exit code stays 0 until you ask for a gate with `--fail-on` or `--max-js-onl
 
 Every verdict carries the numbers that produced it, and the JSON and HTML reports keep
 `confidence: "measured"` or `"heuristic"` so a heuristic is never mistaken for a fact.
+
+## AI usage preferences (`Content-Usage`)
+
+robots.txt used to answer one question: may this crawler fetch this page? The `Content-Usage`
+signal in the IETF `aipref` draft answers a second one: may this content be used for training?
+Anthropic, OpenAI, Google and Microsoft committed to it in November 2026.
+
+```txt
+User-agent: *
+Allow: /
+Content-Usage: train-ai=n, search=y
+```
+
+botglass reports what the page declares and, more usefully, when it disagrees with reality:
+
+```
+  USAGE train-ai=n (training not allowed), declared in User-agent: *
+  FIX   You declare train-ai=n but robots.txt still lets GPTBot and ClaudeBot fetch this page;
+        declaring the preference is not the same as blocking training, and the AI companies
+        honouring it is voluntary.
+```
+
+Declaring `train-ai=y` while robots.txt blocks the crawlers is flagged too, because then
+nobody can read the page you said they could train on. A value that is not `y`, `n` or `u` is
+reported as unreadable rather than guessed at. `--compact` carries it as `trainAi`.
 
 ## Crawlers it imitates
 
@@ -213,7 +243,7 @@ it after comparing, so the next run measures against the newest state.
 
 ```bash
 npm install
-npm test              # 103 tests: unit, fixture-server integration, real CLI subprocess
+npm test              # 118 tests: unit, fixture-server integration, real CLI subprocess
 npm run build         # tsc -> dist/
 ```
 

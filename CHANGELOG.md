@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.0 — 2026-11-04
+
+- Reads `Content-Usage` in robots.txt, the shared AI usage preference Anthropic, OpenAI,
+  Google and Microsoft backed in November 2026 (IETF `aipref` draft). The report shows what
+  the page declares (`train-ai=n`, `training not allowed`) and which group declared it.
+- Flags the two contradictions that matter: declaring training allowed while robots.txt
+  blocks the crawlers, and declaring `train-ai=n` while still letting every crawler fetch
+  the page. Unreadable values are reported, never guessed.
+- `trainAi` in the compact report, so an agent sees the declared preference in one field.
+- Content-Usage lines no longer get discarded with unknown robots.txt fields.
+- 118 tests.
+
 ## 0.3.0 — 2026-11-04
 
 - `botglass mcp`: a stdio MCP server, so agents call botglass as a tool instead of

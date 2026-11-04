@@ -56,6 +56,19 @@ Disallow: /claude-off
 User-agent: *
 Allow: /
 Disallow: /private
+Content-Usage: train-ai=n, search=y
+`;
+
+/** robots.txt that declares training allowed. */
+const ROBOTS_ALLOW = `User-agent: *
+Allow: /
+Content-Usage: train-ai=y
+`;
+
+/** robots.txt with a broken Content-Usage value. */
+const ROBOTS_BAD = `User-agent: *
+Allow: /
+Content-Usage: train-ai=maybe, , broken
 `;
 
 const SITEMAP = `<?xml version="1.0" encoding="UTF-8"?>
@@ -90,6 +103,10 @@ export async function startFixture(): Promise<Fixture> {
     switch (url.pathname) {
       case "/robots.txt":
         return send(200, ROBOTS, "text/plain; charset=utf-8");
+      case "/robots-allow.txt":
+        return send(200, ROBOTS_ALLOW, "text/plain; charset=utf-8");
+      case "/robots-bad.txt":
+        return send(200, ROBOTS_BAD, "text/plain; charset=utf-8");
       case "/sitemap.xml":
         return send(200, SITEMAP.replace(/__BASE__/g, base), "application/xml");
       case "/sitemap-index.xml":

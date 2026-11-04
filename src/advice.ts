@@ -30,6 +30,38 @@ function groupByVerdict(verdicts: BotVerdict[]): Map<Verdict, string[]> {
   return groups;
 }
 
+function usageAdvice(page: PageReport): string[] {
+  const usage = page.usage;
+  if (!usage) return [];
+  const out: string[] = [];
+  const blocked = page.verdicts.filter((v) => v.verdict === "robots-blocked").map((v) => v.bot);
+
+  if (usage.malformed.length > 0) {
+    out.push(
+      `robots.txt has a Content-Usage line we cannot read ("${usage.malformed[0]}"): the value must be one of y, n or u, written category=value.`,
+    );
+  }
+
+  if (usage.trainAi === "y" && blocked.length > 0) {
+    out.push(
+      `This page says training is allowed (Content-Usage: train-ai=y) but robots.txt disallows ${listBots(blocked)}; crawlers that obey robots.txt will never see it.`,
+    );
+  } else if (usage.trainAi === "n") {
+    const allowedBots = page.verdicts.filter((v) => v.verdict !== "robots-blocked").map((v) => v.bot);
+    if (allowedBots.length > 0) {
+      out.push(
+        `You declare train-ai=n but robots.txt still lets ${listBots(allowedBots)} fetch this page; declaring the preference is not the same as blocking training, and the AI companies honouring it is voluntary.`,
+      );
+    }
+  } else if (usage.trainAi === "u") {
+    out.push(
+      "Content-Usage: train-ai=u asks crawlers to check with you rather than deciding; make it explicit (y or n) if you want a reliable answer.",
+    );
+  }
+
+  return out;
+}
+
 /** Page-level advice that is not tied to a single bot. */
 function pageAdvice(page: PageReport, alreadyMentionsJs: boolean): string[] {
   const out: string[] = [];
@@ -90,5 +122,6 @@ export function adviceForPage(page: PageReport): string[] {
   }
 
   out.push(...pageAdvice(page, js !== undefined));
+  out.push(...usageAdvice(page));
   return out.slice(0, 5);
 }

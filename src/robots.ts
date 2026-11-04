@@ -16,6 +16,8 @@ export interface RobotsGroup {
   agents: string[];
   rules: RobotsRule[];
   crawlDelay: number | null;
+  /** Raw `Content-Usage` values, in file order. */
+  contentUsage: string[];
 }
 
 export interface RobotsDecision {
@@ -39,7 +41,7 @@ export function parseRobots(txt: string): RobotsGroup[] {
 
     if (field === "user-agent") {
       if (!current || !acceptingAgents) {
-        current = { agents: [], rules: [], crawlDelay: null };
+        current = { agents: [], rules: [], crawlDelay: null, contentUsage: [] };
         groups.push(current);
         acceptingAgents = true;
       }
@@ -64,9 +66,15 @@ export function parseRobots(txt: string): RobotsGroup[] {
     if (field === "crawl-delay") {
       const parsed = Number.parseFloat(value);
       if (Number.isFinite(parsed) && parsed >= 0) current.crawlDelay = parsed;
+      continue;
+    }
+
+    if (field === "content-usage") {
+      if (value) current.contentUsage.push(value);
     }
   }
 
+  // A group that declares usage preferences but no rules still matters.
   return groups.filter((g) => g.agents.length > 0);
 }
 

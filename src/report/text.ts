@@ -4,6 +4,7 @@
  */
 
 import type { PageReport, RunReport, Verdict } from "../types.js";
+import { describeUsage } from "../aipref.js";
 import { describeChange, type BaselineDiff } from "../baseline.js";
 import { worstVerdict } from "./compact.js";
 
@@ -76,6 +77,18 @@ export function renderPageText(page: PageReport, options: TextReportOptions = {}
     lines.push(paint("  Content only present after JavaScript runs:", DIM, color));
     for (const sample of page.jsOnly.sample) {
       lines.push(`    - ${truncate(sample, 110)}`);
+    }
+  }
+
+  if (page.usage && (page.usage.trainAi !== null || page.usage.malformed.length > 0)) {
+    lines.push("");
+    if (page.usage.trainAi !== null) {
+      lines.push(
+        `  ${paint("USAGE", "\u001b[35m", color)} train-ai=${page.usage.trainAi} (${describeUsage(page.usage.trainAi)}), declared in ${page.usage.source ?? "robots.txt"}`,
+      );
+    }
+    for (const bad of page.usage.malformed) {
+      lines.push(`  ${paint("USAGE", "\u001b[33m", color)} could not read "${truncate(bad, 60)}"`);
     }
   }
 

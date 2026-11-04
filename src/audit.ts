@@ -10,6 +10,7 @@ import { BASELINE, type BotIdentity } from "./bots.js";
 import { extractPage, looksLikeSpaShell } from "./html.js";
 import { fetchAs, originOf, sleep } from "./fetch.js";
 import { isAllowed, parseRobots, pathWithQueryOf, type RobotsGroup } from "./robots.js";
+import { resolveUsage } from "./aipref.js";
 import { jsOnlyReport, similarity } from "./diff.js";
 import { adviceForPage } from "./advice.js";
 import type {
@@ -396,6 +397,7 @@ export async function auditUrl(
 
   const verdicts = results.map((bot) => decideVerdict({ bot, baseline, jsOnly, spaShell }));
   const findings = collectFindings(baseline, verdicts, jsOnly, renderError, spaShell);
+  const usage = resolveUsage(robots.groups, pathWithQueryOf(url), BASELINE.robotsToken);
 
   const page = {
     url,
@@ -409,7 +411,8 @@ export async function auditUrl(
     jsOnly,
     verdicts,
     findings,
-  } as PageReport;
+    usage,
+  } as unknown as PageReport;
 
   return { ...page, advice: adviceForPage(page) };
 }

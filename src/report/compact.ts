@@ -36,6 +36,8 @@ export interface CompactPage {
   words: number;
   renderedWords: number | null;
   worst: Verdict;
+  /** Declared `Content-Usage: train-ai` value, or null when the site says nothing. */
+  trainAi: string | null;
   bots: Array<{ bot: string; verdict: Verdict; words: number; status: number | null }>;
   advice: string[];
 }
@@ -67,6 +69,7 @@ export function compactPage(page: PageReport): CompactPage {
         ? page.render.wordCount
         : null,
     worst: worstVerdict(page),
+    trainAi: page.usage?.trainAi ?? null,
     bots: page.bots.map((bot) => ({
       bot: bot.bot,
       verdict: page.verdicts.find((v) => v.bot === bot.bot)?.verdict ?? "error",
