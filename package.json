@@ -3,6 +3,14 @@
   "version": "0.1.1",
   "description": "See your site exactly as AI crawlers see it: per-bot fetch, raw vs rendered diff, robots and cloaking checks, one command.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yardworkdev/botglass.git"
+  },
+  "homepage": "https://yardworkdev.github.io/botglass/",
+  "bugs": {
+    "url": "https://github.com/yardworkdev/botglass/issues"
+  },
   "type": "module",
   "bin": {
     "botglass": "dist/src/cli.js"

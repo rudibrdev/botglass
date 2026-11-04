@@ -50,8 +50,8 @@ never required at install time.
 - Integration: local fixture server (SSR, SPA, per-UA cloak, robots block, 403-by-UA,
   redirect, 500) driven through the real CLI as a child process: JSON shape, verdicts,
   exit codes for `--fail-on` / `--max-js-only`, `--html` output.
-- Install: clean clone, `npm ci && npm test`, and `npx github:rudibrdev/botglass --help`.
+- Install: clean clone, `npm ci && npm test`, and `npx github:yardworkdev/botglass --help`.
 
 ## Launch
-Public MIT repo `rudibrdev/botglass`, v0.1.1 GitHub release, sample HTML report on GitHub
+Public MIT repo `yardworkdev/botglass`, v0.1.1 GitHub release, sample HTML report on GitHub
 Pages. Nothing needed from Ves.

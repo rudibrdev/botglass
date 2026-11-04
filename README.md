@@ -12,13 +12,13 @@ No account, no API key, no dashboard, no telemetry. One command, plain HTTP.
 ## Quick start
 
 ```bash
-npx github:rudibrdev/botglass https://example.com
+npx github:yardworkdev/botglass https://example.com
 ```
 
 Requires Node 20 or newer. From a clone:
 
 ```bash
-git clone https://github.com/rudibrdev/botglass
+git clone https://github.com/yardworkdev/botglass
 cd botglass
 npm install
 npm test          # builds, then runs the whole suite
@@ -128,7 +128,7 @@ and says `confidence: "heuristic"`.
 
 ```yaml
 - name: Crawler visibility gate
-  run: npx github:rudibrdev/botglass https://example.com --fail-on ua-blocked,error,cloaked
+  run: npx github:yardworkdev/botglass https://example.com --fail-on ua-blocked,error,cloaked
 ```
 
 Exit codes: `0` pass, `1` gate failed, `2` usage or runtime error. `--json` writes a
