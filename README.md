@@ -11,7 +11,7 @@ No account, no API key, no dashboard, no telemetry. One command, plain HTTP.
 
 ## Hand it to your agent
 
-Paste this into Claude Code, Cursor, Codex, or any agent that can run shell commands:
+Two ways. As a shell command your agent runs:
 
 ```text
 Check whether AI crawlers can read our site. Run:
@@ -22,6 +22,24 @@ Summarise the verdicts in two sentences and list the fixes it gives.
 After we deploy a fix, run the same command again with --baseline .botglass.json
 and tell me exactly what changed since the previous run.
 ```
+
+Or as an MCP server, so the agent calls it as a tool. Add this to your MCP config
+(Claude Code: `claude mcp add botglass -- npx -y github:yardworkdev/botglass mcp`;
+Cursor and others: the same command in `.cursor/mcp.json` / `mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "botglass": {
+      "command": "npx",
+      "args": ["-y", "github:yardworkdev/botglass", "mcp"]
+    }
+  }
+}
+```
+
+It exposes two tools: `audit_url` (one page) and `audit_sitemap` (up to 50 pages), both
+returning the compact verdicts and fixes. Stdio only; nothing listens on a port.
 
 `--compact` keeps the answer small enough to read in context; `--baseline` turns the
 second run into proof that the fix worked.
@@ -48,7 +66,7 @@ Real output, from `botglass https://excalidraw.com https://nextjs.org --render` 
 nextjs.org rows are trimmed):
 
 ```
-botglass 0.2.0  2 page(s), 8 bots, render on
+botglass 0.3.0  2 page(s), 8 bots, render on
 
 https://excalidraw.com/
   HTTP 200, 3 words in raw HTML, 80 words rendered
@@ -195,7 +213,7 @@ it after comparing, so the next run measures against the newest state.
 
 ```bash
 npm install
-npm test              # 95 tests: unit, fixture-server integration, real CLI subprocess
+npm test              # 103 tests: unit, fixture-server integration, real CLI subprocess
 npm run build         # tsc -> dist/
 ```
 

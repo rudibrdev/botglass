@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 — 2026-11-04
+
+- `botglass mcp`: a stdio MCP server, so agents call botglass as a tool instead of
+  shelling out. Tools: `audit_url` and `audit_sitemap`, both returning the compact verdicts
+  and fixes. Hand-rolled JSON-RPC, still zero dependencies; protocol frames are the only
+  thing written to stdout.
+- The MCP server is tested by a client that spawns the real binary and speaks JSON-RPC at it:
+  initialize, tools/list, both tools, unknown tool, unknown method, missing arguments.
+- 103 tests.
+
 ## 0.2.0 — 2026-11-04
 
 - Every page ends in a `FIX` list: one instruction per cause, not per bot, so eight

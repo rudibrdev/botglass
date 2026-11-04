@@ -16,6 +16,7 @@ import { renderRunText, renderCompactText, summarise } from "./report/text.js";
 import { renderHtml } from "./report/html.js";
 import { buildRunReport } from "./report/run.js";
 import { compactRun } from "./report/compact.js";
+import { runMcpServer } from "./mcp.js";
 import { buildBaseline, compareBaseline, parseBaseline, type BaselineDiff } from "./baseline.js";
 import { isVerdict, VERDICTS } from "./types.js";
 import type { AuditOptions, PageReport, Renderer, RunOptions, Verdict } from "./types.js";
@@ -25,6 +26,7 @@ const USAGE = `
 botglass ${VERSION} — see your site exactly as AI crawlers see it
 
   botglass <url...> [options]
+  botglass mcp             Speak MCP over stdio, for Claude Code, Cursor or any MCP client
 
 What it does
   Fetches each URL as a normal browser and as each AI/search crawler, compares
@@ -118,6 +120,10 @@ async function readUrlList(path: string): Promise<string[]> {
 }
 
 async function main(argv: string[]): Promise<void> {
+  if (argv[0] === "mcp") {
+    await runMcpServer();
+    return;
+  }
   let parsed: ReturnType<typeof parseArgs>;
   try {
     parsed = parseArgs({
