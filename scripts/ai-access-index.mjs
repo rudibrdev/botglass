@@ -37,8 +37,8 @@ if (renderFrom) {
   const saved = JSON.parse(await readFile(renderFrom, "utf8"));
   const bots = [...BOTS, BASELINE].map((bot) => bot.name);
   await mkdir(outDir, { recursive: true });
-  await writeFile(join(outDir, "ai-access-index.html"), renderHtml(saved.summary, saved.rows, bots));
-  console.error(`re-rendered ${outDir}/ai-access-index.html from ${renderFrom}`);
+  await writeFile(join(outDir, "index.html"), renderHtml(saved.summary, saved.rows, bots));
+  console.error(`re-rendered ${outDir}/index.html from ${renderFrom}`);
   process.exit(0);
 }
 
@@ -211,7 +211,7 @@ function median(values) {
 
 await mkdir(outDir, { recursive: true });
 await writeFile(join(outDir, "ai-access-index.json"), JSON.stringify({ summary, rows }, null, 2));
-await writeFile(join(outDir, "ai-access-index.html"), renderHtml(summary, rows, bots));
+await writeFile(join(outDir, "index.html"), renderHtml(summary, rows, bots));
 console.log(JSON.stringify(summary, null, 2));
 
 function esc(value) {
