@@ -53,5 +53,5 @@ never required at install time.
 - Install: clean clone, `npm ci && npm test`, and `npx github:rudibrdev/botglass --help`.
 
 ## Launch
-Public MIT repo `rudibrdev/botglass`, v0.1.0 GitHub release, sample HTML report on GitHub
+Public MIT repo `rudibrdev/botglass`, v0.1.1 GitHub release, sample HTML report on GitHub
 Pages. Nothing needed from Ves.
