@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.1 — 2026-11-04
+
+- `Content-Usage` categories outside the draft vocabulary (`train-ai`, `ai-use`, `search`) are
+  now reported instead of being silently ignored — launchpad.net writes `ai=n`, which looked
+  exactly like no declaration at all.
+- AI Access Index: `scripts/ai-access-index.mjs` measures any `rank,domain` list and writes a
+  published page plus JSON. November 2026 edition at `/ai-access-index/`.
+- `--render` re-renders a saved dataset without re-measuring it.
+
 ## 0.4.0 — 2026-11-04
 
 - Reads `Content-Usage` in robots.txt, the shared AI usage preference Anthropic, OpenAI,

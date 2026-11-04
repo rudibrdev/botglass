@@ -24,6 +24,13 @@ export interface UsageSignal {
   value: UsageValue;
 }
 
+/** Categories in the draft vocabulary (draft-ietf-aipref-vocab). */
+export const KNOWN_CATEGORIES = ["train-ai", "ai-use", "search"] as const;
+
+export function isKnownCategory(category: string): boolean {
+  return (KNOWN_CATEGORIES as readonly string[]).includes(category);
+}
+
 export interface UsageDecision {
   /** Every category the site declared, as written. */
   signals: UsageSignal[];
@@ -33,6 +40,8 @@ export interface UsageDecision {
   source: string | null;
   /** Lines we could not parse, reported rather than silently dropped. */
   malformed: string[];
+  /** Categories outside the draft vocabulary, e.g. a site writing `ai=n`. */
+  unknownCategories: string[];
 }
 
 const KNOWN_VALUES = new Set(["y", "n", "u"]);
@@ -79,6 +88,7 @@ export function resolveUsage(groups: RobotsGroup[], path: string, token: string)
   const malformed: string[] = [];
   let trainAi: UsageValue | null = null;
   let source: string | null = null;
+  const unknownCategories: string[] = [];
 
   for (const group of chosen) {
     if (group.contentUsage.length === 0) continue;
@@ -88,6 +98,11 @@ export function resolveUsage(groups: RobotsGroup[], path: string, token: string)
       const parsed = parseUsageSignals(raw);
       signals.push(...parsed.signals);
       malformed.push(...parsed.malformed);
+      for (const signal of parsed.signals) {
+        if (!isKnownCategory(signal.category) && !unknownCategories.includes(signal.category)) {
+          unknownCategories.push(signal.category);
+        }
+      }
       const train = parsed.signals.find((signal) => signal.category === "train-ai");
       if (train) {
         trainAi = train.value;
@@ -96,7 +111,7 @@ export function resolveUsage(groups: RobotsGroup[], path: string, token: string)
     }
   }
 
-  return { signals, trainAi, source, malformed };
+  return { signals, trainAi, source, malformed, unknownCategories };
 }
 
 /** robots.txt pattern matching, minus the specificity ranking robots.ts handles. */

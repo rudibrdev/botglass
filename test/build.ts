@@ -39,7 +39,7 @@ export interface PageInput {
   usage?: UsageDecision;
 }
 
-export const NO_USAGE: UsageDecision = { signals: [], trainAi: null, source: null, malformed: [] };
+export const NO_USAGE: UsageDecision = { signals: [], trainAi: null, source: null, malformed: [], unknownCategories: [] };
 
 export function makePage(input: PageInput = {}): PageReport {
   const verdicts: BotVerdict[] = (input.verdicts ?? [["GPTBot", "ok"]]).map(([bot, verdict]) => ({

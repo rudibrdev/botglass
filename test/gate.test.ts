@@ -48,7 +48,7 @@ function page(url: string, verdicts: Array<[string, Verdict]>, jsRatio: number |
       confidence: "measured" as const,
     })),
     findings: [],
-    usage: { signals: [], trainAi: null, source: null, malformed: [] },
+    usage: { signals: [], trainAi: null, source: null, malformed: [], unknownCategories: [] },
     advice: [],
   };
 }

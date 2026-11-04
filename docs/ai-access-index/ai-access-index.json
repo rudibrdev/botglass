@@ -1,0 +1,5794 @@
+{
+  "summary": {
+    "generatedAt": "2026-11-04T19:33:58.289Z",
+    "tool": "botglass",
+    "version": "0.4.0",
+    "sample": {
+      "source": "Tranco list",
+      "domainsRequested": 300,
+      "robotsFound": 164,
+      "homepagesFetched": 162
+    },
+    "perBot": {
+      "GPTBot": {
+        "blocked": 35
+      },
+      "OAI-SearchBot": {
+        "blocked": 22
+      },
+      "ChatGPT-User": {
+        "blocked": 24
+      },
+      "ClaudeBot": {
+        "blocked": 36
+      },
+      "PerplexityBot": {
+        "blocked": 33
+      },
+      "CCBot": {
+        "blocked": 40
+      },
+      "meta-externalagent": {
+        "blocked": 37
+      }
+    },
+    "anyAiBotBlocked": 46,
+    "allAiBotsBlocked": 19,
+    "googlebotBlocked": 5,
+    "contentUsage": {
+      "declared": 0,
+      "trainAiNo": 0,
+      "trainAiYes": 0,
+      "trainAiUnknown": 0,
+      "malformed": 0,
+      "rawLinesSeen": 1,
+      "unknownCategoryDomains": [
+        "launchpad.net (ai)"
+      ]
+    },
+    "contradictions": {
+      "declaresNoTrainingButReachable": 0,
+      "declaresTrainingButBlocked": 0
+    },
+    "homepages": {
+      "medianWords": 537,
+      "under50Words": 41,
+      "zeroWords": 7
+    },
+    "durationSeconds": 66,
+    "percentages": {
+      "anyAiBotBlocked": 28,
+      "allAiBotsBlocked": 11.6,
+      "contentUsageDeclared": 0,
+      "declaresNoTrainingButReachable": 0,
+      "homepagesUnder50Words": 25.3
+    }
+  },
+  "rows": [
+    {
+      "domain": "google.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 18,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Google",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cloudflare.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 296,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cloudflare: Build for the agent era",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ezviz7.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "amazonaws.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1509,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cloud Computing Services - Amazon Web Services (AWS)",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "facebook.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 74,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Facebook",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "fbcdn.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 74,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": true,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Facebook",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "gstatic.com",
+      "robotsStatus": 200,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": true,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "googleapis.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "microsoft.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 628,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Microsoft – AI, Cloud, Produktivität, Computing, Gaming und Apps",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "youtube.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 27,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "YouTube",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "hicloudcam.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "apple.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 959,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Apple",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "akamai.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "instagram.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 120,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Instagram",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "akamaiedge.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "twitter.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 82,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "X. It’s what’s happening / X",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "linkedin.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 804,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "LinkedIn: Log In or Sign Up",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "azure.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2625,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cloud Computing Services | Microsoft Azure",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "mail.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "triplinkintl.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1537,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "TripLink",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "akadns.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "domaincontrol.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "gwfb.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "googlevideo.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "googletagmanager.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "gtld-servers.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "appsflyersdk.com",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "cloudfront.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "dzen.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "amazon.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 481,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Amazon.com. Spend less. Smile more.",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "shiabank.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "office.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1028,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Microsoft 365 - Sign into Copilot",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "live.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Outlook",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "github.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1162,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "sharepoint.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 3687,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "SharePoint – Werkzeuge für die Zusammenarbeit im Team",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "aaplimg.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "trafficmanager.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "wikipedia.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1318,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Wikipedia",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "fastly.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1744,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Powering the best of the internet | Fastly",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "lsrelayaccess.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "apple-dns.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "cloud.microsoft",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1028,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Microsoft 365 - Sign into Copilot",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "netflix.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 591,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Netflix Deutschland – Serien online ansehen, Filme online ansehen",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "whatsapp.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 387,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "office.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "bing.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 31,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Suche – Microsoft Bing",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "x.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 82,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "X. It’s what’s happening / X",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "w2rt6byl5nf1opmc-a.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "googleusercontent.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "youtu.be",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 27,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "YouTube",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "doubleclick.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1024,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Enterprise Advertising & Analytics Solutions - Google Marketing Platform",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "pv-cdn.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "googlesyndication.com",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 18,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Google"
+    },
+    {
+      "domain": "pinterest.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Pinterest",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "icloud.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "iCloud",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "gandi.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2487,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Gandi.net - Gandi.net: Domain Names, Web Hosting, SSL Certificates and Emails",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "windows.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "cloudflare.net",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "myfritz.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "MyFRITZ!Net",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "goo.gl",
+      "robotsStatus": 400,
+      "homeStatus": 400,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "microsoftonline.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "adobe.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 927,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Adobe: Creative, marketing and document management solutions",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "tiktok.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 5,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "TikTok - Make Your Day",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "zoom.us",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1797,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "One platform to connect | Zoom",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "wordpress.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 524,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Blog Tool, Publishing Platform, and CMS – WordPress.org",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "whatsapp.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 387,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "windowsupdate.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "googledomains.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 87,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Google Domains",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "gvt1.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "yahoo.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1708,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "h264.io",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "skype.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 215,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Free Online Meetings & Video Calls | Microsoft Teams",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "wa.me",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 174,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Open WhatsApp",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "digicert.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 6,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "edgekey.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "tiktokcdn.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "spotify.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 11,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Spotify - Web Player: Listen to Music, Podcasts, and Audiobooks Online",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "opera.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 647,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Opera Web Browser | Faster, Safer, Smarter | Opera",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "roblox.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 10,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Roblox: Play Free Online Games - Sign Up to Play!",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "a2z.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "workers.dev",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1391,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cloudflare Workers - Global Serverless Functions Platform",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "amazonvideo.com",
+      "robotsStatus": 200,
+      "homeStatus": 503,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": true,
+        "ClaudeBot": false,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "b-cdn.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1490,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "bunny.net - The Global Edge Platform that truly Hops",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "tiktokv.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "epicgames.com",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "baidu.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 6856,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "百度一下，你就知道",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ntp.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 176,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "NTP: Network Time Protocol",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "vimeo.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1437,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Vimeo - All-in-One Video Platform",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "blogspot.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 437,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Blogger.com - Create a unique and beautiful blog easily.",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "3gppnetwork.org",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "qq.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 154,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "腾讯网",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "mozilla.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1528,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Mozilla - Internet for people, not profit (US)",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "akam.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "nginx.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 291,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "nginx",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "msn.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "MSN",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "yandex.net",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 15,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Яндекс — быстрый поиск в интернете"
+    },
+    {
+      "domain": "aws.dev",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "f5.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1827,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Hybrid Multicloud App Security & Delivery for the AI Era | F5",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "wordpress.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 762,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "WordPress.com: Alles, was du zum Erstellen deiner Website brauchst",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "t.me",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 307,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Telegram Messenger"
+    },
+    {
+      "domain": "cdn77.org",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "sentry.io",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2868,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Application Performance Monitoring & Error Tracking Software | Sentry",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "nginx.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1010,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "NGINX | F5",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "dotaplabs.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "lencr.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 561,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "lencr.org - Let's Encrypt",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "reddit.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": true,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Reddit",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "edgesuite.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "virginm.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "ui.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 299,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "UniFi - Rethinking IT - Ubiquiti",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "2mdn.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "europa.eu",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 66,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Language selection | European Union",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cdninstagram.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "chatgpt.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "intuit.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1046,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Intuit®: Outdo your financial goals—all in one place",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "yandex.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "t-online.de",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2003,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "gvt2.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "bit.ly",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1634,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Bitly | Short URLs, QR Codes, and More",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "root-servers.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "aliyuncs.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "ipify.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1222,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "ipify - A Simple Public IP Address API",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "samsung.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1935,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Samsung Deutschland | Smartphones | TVs | Haushaltsgeräte",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "fastly-edge.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "yccdn.ru",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "amazon.dev",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "registrar-servers.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 13,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": true,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Home - registrar-servers.com",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "okcdn.ru",
+      "robotsStatus": 404,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "azurefd.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "openai.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "office365.com",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "android.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1138,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Android | Mehr Möglichkeiten mit Google für Android-Smartphones und -Geräte",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "skybridge.click",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": true,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "ООО \"СМП-74\"",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "dropbox.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 907,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Dropbox: Secure cloud storage, file sharing, and more",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "adobe.io",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 246,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "The most memorable digital experiences are unleashed by developer creativity",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ytimg.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "github.io",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 700,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "GitHub Pages | Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "outlook.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Outlook",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cloudflare-dns.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1002,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "1.1.1.1 — One of the Internet’s Fastest, Privacy-First DNS Resolver",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "nih.gov",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "windows.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1645,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Experience the Windows difference with Windows 11 OS, Laptops, PCs & Apps | Microsoft Windows",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "akamaized.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "webex.com",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "nflxso.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "apache.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 784,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Welcome to The Apache Software Foundation | Apache Software Foundation",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "nic.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "static.microsoft",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "discord.gg",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 726,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "dns-parking.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "vk.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 30,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "VK.com | VK",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "supertms.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "tm-azurefd.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "duckdns.org",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 40,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Duck DNS"
+    },
+    {
+      "domain": "archive.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 14,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "forms.gle",
+      "robotsStatus": 400,
+      "homeStatus": 400,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "tumblr.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 19,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Tumblr",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "dnsowl.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "crashlytics.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 886,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Firebase Crashlytics | Track, prioritize, and fix app crashes faster",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "snapchat.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 371,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Snapchat - Say It In A Snap",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "azurewebsites.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "vk.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 30,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "VK.com | VK",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "godaddy.com",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "nytimes.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "spo-msedge.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "jomodns.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "reg.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "gravatar.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 659,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Your Free Avatar, Profile, and Link In Bio | Gravatar",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ubuntu.com",
+      "robotsStatus": 503,
+      "homeStatus": 200,
+      "words": 2167,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "The enterprise Linux for open source innovation | Ubuntu"
+    },
+    {
+      "domain": "telegram.org",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 307,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Telegram Messenger"
+    },
+    {
+      "domain": "trbcdn.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "amazon-adsystem.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "shopify.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1133,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "samsungcloud.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Samsung Cloud",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ax-msedge.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "paypal.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 900,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "PayPal Konto | Digitale Mobile Wallet | PayPal DE",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "telekom.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 838,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Startseite | Deutsche Telekom",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "kaspersky.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1734,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Kaspersky Cyber Security Solutions for Home and Business | Kaspersky",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "example.com",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 27,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Example Domain"
+    },
+    {
+      "domain": "google-analytics.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 693,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Analytics Tools & Solutions for Your Business - Google Analytics",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "pages.dev",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 901,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cloudflare Pages - Serverless Full-Stack Platform",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "scorecardresearch.com",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 318,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Home Page - Scorecard Research"
+    },
+    {
+      "domain": "flickr.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 531,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Flickr | The best place to be a photographer online.",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "tbcache.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "nflximg.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "ksyuncdn.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "astrumu.io",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 22,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "astrumu.io",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "meraki.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 276,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cisco Meraki: Cloud-Managed Networking - Cisco",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "w3.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 881,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "W3C",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "discord.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 726,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "creativecommons.org",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 679,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Building tools for shared knowledge - Creative Commons",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "comcast.net",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "awswaf.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "cnn.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 8,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ebay.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "soundcloud.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 55,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Stream and listen to music online for free with SoundCloud",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "unity3d.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: This operation was aborted",
+        "home: This operation was aborted"
+      ]
+    },
+    {
+      "domain": "macromedia.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "theguardian.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1772,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Latest news, sport and opinion from the Guardian",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "pki.goog",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 297,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Google Trust Services | Home",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "hichina.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "quickconnect.to",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 262,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Synology QuickConnect"
+    },
+    {
+      "domain": "youtube-nocookie.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "medium.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "forter.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1288,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Forter – Fraud Prevention, Payment Optimization and Agentic Commerce",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "afternic.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 370,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Sell Domains | Buy Domains | Park Domains - Afternic",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "stripe.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1981,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Online-Bezahldienst und Zahlungsdienstleister | Stripe",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "vkuserphoto.ru",
+      "robotsStatus": 418,
+      "homeStatus": 418,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "iiko.it",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "mts.ru",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1014,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "МТС - связь и экосистема цифровых сервисов - Частным клиентам | Официальный сайт МТС - Москва и Московская область",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "doi.org",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 543,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Home Page"
+    },
+    {
+      "domain": "msedge.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "mtgglobals.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "firefox-portal-detection.com",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": ""
+    },
+    {
+      "domain": "app-measurement.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "omtrdc.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "oracle.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "azureedge.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "ttdns2.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "skyhigh.cloud",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "bybanking.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "criteo.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2586,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "The Global Commerce Intelligence Platform",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "bbc.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2976,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "BBC Home | Breaking News, World News, US News, Sports, Business, Innovation, Climate, Culture, Travel, Video & Audio",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "publicnode.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2880,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "PublicNode",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "hcaptcha.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2083,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "hCaptcha: Real-Time Bot Detection & Fraud Prevention",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "xiaomi.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1141,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Smartphone | Tablet | Smart TV - Xiaomi Deutschland",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cdngslb.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "licdn.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "wikimedia.org",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 196,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Wikimedia"
+    },
+    {
+      "domain": "forbes.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ailawandorder.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "rbxcdn.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "twitch.tv",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Twitch",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "weather.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 305,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "National and Local Weather Radar, Daily Forecast, Hurricane and information from The Weather Channel and weather.com",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "sciencedirect.com",
+      "robotsStatus": 403,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "researchgate.net",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "mit.edu",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 396,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "MIT - Massachusetts Institute of Technology",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "roku.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Roku",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "applovin.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 477,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "AppLovin | Advertising solutions built for growth",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "nist.gov",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 702,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "National Institute of Standards and Technology",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "googletagservices.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "bbc.co.uk",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2152,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "BBC - Home",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "namecheap.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "shifen.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "amplitude.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1067,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Amplitude | A new era for product teams",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cpanel.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 625,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Web Hosting Control Panel & Server Management Tools | cPanel",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "playstation.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "msftconnecttest.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "t.co",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 53,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "t.co / X",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cisco.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 730,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "AI Infrastructure, Secure Networking, and Software Solutions - Cisco",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "wsdvs.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "sourceforge.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1489,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "yandexcloud.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "adtrafficquality.google",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 527,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Google Ad Traffic Quality"
+    },
+    {
+      "domain": "aliyuncsslbintl.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "bytefcdn-oversea.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "dnsmadeeasy.com",
+      "robotsStatus": 404,
+      "homeStatus": 200,
+      "words": 107,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Managed DNS Business Services & Solutions Provider | a DigiCert Company"
+    },
+    {
+      "domain": "icanhazip.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "sfx.ms",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "name-services.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "hubspot.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 2305,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "HubSpot | Software & Tools for your Business - Homepage",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "alibabadns.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "vedcdnlb.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "imdb.com",
+      "robotsStatus": 200,
+      "homeStatus": 202,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "linktr.ee",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1689,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Link in bio tool: Everything you are, in one simple link | Linktree",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "cdn-apple.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "arubanetworks.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "avcdn.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "brave.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1832,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "The browser that puts you first | Brave",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "alidns.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 107,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "阿里公共DNS",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "who.int",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 681,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "World Health Organization (WHO)",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "googleblog.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1337,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "News from Google | Google Product and Technology News and Stories",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "namebrightdns.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "mybluehost.me",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "wixsite.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "ozon.ru",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "geobasket.ru",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "ttvnw.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "akamaihd.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "googleadservices.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "ibm.com",
+      "robotsStatus": 200,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "xcal.tv",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "datadoghq.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1998,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Cloud Monitoring as a Service | Datadog",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "reuters.com",
+      "robotsStatus": 200,
+      "homeStatus": 401,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": true
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "hp.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 795,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Laptop-Computer, Desktops, Drucker, Tinte und Toner | HP® Deutschland",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "canva.com",
+      "robotsStatus": 200,
+      "homeStatus": 403,
+      "words": 0,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": false,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "demdex.net",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "launchpad.net",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 345,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": true,
+        "ChatGPT-User": false,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [
+        "ai=n"
+      ],
+      "malformed": [],
+      "errors": [],
+      "title": "Launchpad",
+      "rawDeclaresContentUsage": true,
+      "unknownCategories": [
+        "ai"
+      ]
+    },
+    {
+      "domain": "userapi.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 30,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "VK.com | VK",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "gamepass.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "booking.com",
+      "robotsStatus": 200,
+      "homeStatus": 202,
+      "words": 0,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "telegram.me",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 307,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Telegram Messenger",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "app-analytics-services.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "tinyurl.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 9,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "URL Shortener, Branded Short Links & Analytics | TinyURL",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "salesforce.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 3528,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Salesforce: Das führende CRM mit KI | Salesforce DE",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "www.gov.uk",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 805,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Welcome to GOV.UK",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "nature.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1460,
+      "blocked": {
+        "GPTBot": true,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": true,
+        "ClaudeBot": true,
+        "PerplexityBot": true,
+        "CCBot": true,
+        "Googlebot": false,
+        "meta-externalagent": true,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Nature",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "myshopify.com",
+      "robotsStatus": 404,
+      "homeStatus": 404,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": []
+    },
+    {
+      "domain": "steampowered.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 4538,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Welcome to Steam",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    },
+    {
+      "domain": "ggpht.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "media-amazon.com",
+      "robotsStatus": null,
+      "homeStatus": null,
+      "words": 0,
+      "blocked": {},
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [
+        "robots: fetch failed",
+        "home: fetch failed"
+      ]
+    },
+    {
+      "domain": "launchdarkly.com",
+      "robotsStatus": 200,
+      "homeStatus": 200,
+      "words": 1147,
+      "blocked": {
+        "GPTBot": false,
+        "OAI-SearchBot": false,
+        "ChatGPT-User": false,
+        "ClaudeBot": false,
+        "PerplexityBot": false,
+        "CCBot": false,
+        "Googlebot": false,
+        "meta-externalagent": false,
+        "baseline": false
+      },
+      "trainAi": null,
+      "signals": [],
+      "malformed": [],
+      "errors": [],
+      "title": "Runtime Control for AI-Era Software | Feature Flags & AI Agent Control | LaunchDarkly",
+      "rawDeclaresContentUsage": false,
+      "unknownCategories": []
+    }
+  ]
+}

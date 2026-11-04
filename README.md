@@ -243,7 +243,7 @@ it after comparing, so the next run measures against the newest state.
 
 ```bash
 npm install
-npm test              # 118 tests: unit, fixture-server integration, real CLI subprocess
+npm test              # 119 tests: unit, fixture-server integration, real CLI subprocess
 npm run build         # tsc -> dist/
 ```
 
@@ -259,6 +259,23 @@ Layout: `src/audit.ts` (verdict rules, pure), `src/robots.ts`, `src/html.ts`,
 ## Sample report
 
 [docs/index.html](docs/index.html) — two live pages, eight bots, rendering on.
+
+## AI Access Index
+
+[The November 2026 edition](https://yardworkdev.github.io/botglass/ai-access-index/) measures the
+300 most-visited domains on the web: who blocks which AI crawler, who declares a
+`Content-Usage` preference, and how many homepages have no server-rendered text at all.
+Raw data sits next to it as JSON.
+
+Reproduce or extend it:
+
+```bash
+node scripts/ai-access-index.mjs --domains tranco.csv --limit 300 --out docs/ai-access-index
+```
+
+`tranco.csv` is any `rank,domain` file — the [Tranco list](https://tranco-list.eu/) works. The
+run makes two requests per domain, sends `botglass` as its User-Agent, and takes about a
+minute at the default concurrency.
 
 ## License
 

@@ -36,6 +36,12 @@ function usageAdvice(page: PageReport): string[] {
   const out: string[] = [];
   const blocked = page.verdicts.filter((v) => v.verdict === "robots-blocked").map((v) => v.bot);
 
+  if (usage.unknownCategories.length > 0) {
+    out.push(
+      `Content-Usage uses "${usage.unknownCategories[0]}=…", which is not in the draft vocabulary (train-ai, ai-use, search); crawlers may ignore it.`,
+    );
+  }
+
   if (usage.malformed.length > 0) {
     out.push(
       `robots.txt has a Content-Usage line we cannot read ("${usage.malformed[0]}"): the value must be one of y, n or u, written category=value.`,

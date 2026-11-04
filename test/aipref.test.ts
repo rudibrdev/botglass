@@ -91,9 +91,16 @@ test("values read as words, not letters", () => {
   assert.match(describeUsage("u"), /unspecified/);
 });
 
+test("a category outside the vocabulary is reported, not treated as train-ai", () => {
+  const groups = parseRobots("User-agent: *\nAllow: /\nContent-Usage: ai=n\n");
+  const decision = resolveUsage(groups, "/", "GPTBot");
+  assert.equal(decision.trainAi, null);
+  assert.deepEqual(decision.unknownCategories, ["ai"]);
+});
+
 test("a declared train-ai=n adds one fix, not a wall of text", () => {
   const page = build({
-    usage: { signals: [{ category: "train-ai", value: "n" }], trainAi: "n", source: "User-agent: *", malformed: [] },
+    usage: { signals: [{ category: "train-ai", value: "n" }], trainAi: "n", source: "User-agent: *", malformed: [], unknownCategories: [] },
     verdicts: [
       ["GPTBot", "ok"],
       ["ClaudeBot", "ok"],
@@ -106,7 +113,7 @@ test("a declared train-ai=n adds one fix, not a wall of text", () => {
 
 test("declaring training allowed while blocking the crawler is flagged as a contradiction", () => {
   const page = build({
-    usage: { signals: [{ category: "train-ai", value: "y" }], trainAi: "y", source: "User-agent: *", malformed: [] },
+    usage: { signals: [{ category: "train-ai", value: "y" }], trainAi: "y", source: "User-agent: *", malformed: [], unknownCategories: [] },
     verdicts: [["GPTBot", "robots-blocked"]],
   });
   const line = page.advice.find((entry) => entry.includes("train-ai=y"));
@@ -116,7 +123,7 @@ test("declaring training allowed while blocking the crawler is flagged as a cont
 
 test("an unreadable Content-Usage value is reported with what to write instead", () => {
   const page = build({
-    usage: { signals: [], trainAi: null, source: null, malformed: ["train-ai=maybe"] },
+    usage: { signals: [], trainAi: null, source: null, malformed: ["train-ai=maybe"], unknownCategories: [] },
   });
   const line = page.advice.find((entry) => entry.includes("cannot read"));
   assert.ok(line);

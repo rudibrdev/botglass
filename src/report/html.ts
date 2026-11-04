@@ -161,6 +161,7 @@ ${report.pages.map(renderPage).join("\n")}
 Verdicts are heuristics unless marked otherwise: <strong>js-dependent</strong> compares the raw HTML with a
 rendered DOM, <strong>cloaked</strong> compares word similarity against a plain-browser fetch. User-Agent strings
 are published by each vendor and dated in the README. Generated ${escapeHtml(report.finishedAt)}.
+<p><a href="./ai-access-index/">AI Access Index</a> — what the top 300 sites tell AI crawlers, measured with this tool.</p>
 </footer>
 </main>
 </body>

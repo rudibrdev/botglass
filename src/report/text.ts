@@ -87,6 +87,9 @@ export function renderPageText(page: PageReport, options: TextReportOptions = {}
         `  ${paint("USAGE", "\u001b[35m", color)} train-ai=${page.usage.trainAi} (${describeUsage(page.usage.trainAi)}), declared in ${page.usage.source ?? "robots.txt"}`,
       );
     }
+    for (const category of page.usage.unknownCategories) {
+      lines.push(`  ${paint("USAGE", "\u001b[33m", color)} unknown category "${category}" (expected train-ai, ai-use or search)`);
+    }
     for (const bad of page.usage.malformed) {
       lines.push(`  ${paint("USAGE", "\u001b[33m", color)} could not read "${truncate(bad, 60)}"`);
     }
