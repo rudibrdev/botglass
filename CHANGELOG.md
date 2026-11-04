@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.2.0 — 2026-11-04
+
+- Every page ends in a `FIX` list: one instruction per cause, not per bot, so eight
+  crawlers failing the same way produce one line ("GPTBot and ClaudeBot do not run
+  JavaScript: server-render the page text").
+- `--compact`: agent-sized output. One line per page plus its first fix, and a JSON
+  projection (`--compact --json`) with the page text dropped — 23 KB became ~2 KB.
+- `--baseline <file>` / `--update-baseline`: run once to diagnose, run again to prove the
+  fix. The report gains a "Changes since …" section: verdict flips, word-count moves, HTTP
+  changes, pages added or missing.
+- `schemaVersion` in both the full and the compact JSON.
+- The compact view shows rendered words from the same counter as the report (82 vs 80 is
+  gone).
+- 95 tests, including a real baseline round-trip and the CLI's compact output as a child
+  process.
+
 ## 0.1.1 — 2026-11-03
 
 - Several URLs on one command line are all audited instead of the extras being dropped.

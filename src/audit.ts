@@ -11,6 +11,7 @@ import { extractPage, looksLikeSpaShell } from "./html.js";
 import { fetchAs, originOf, sleep } from "./fetch.js";
 import { isAllowed, parseRobots, pathWithQueryOf, type RobotsGroup } from "./robots.js";
 import { jsOnlyReport, similarity } from "./diff.js";
+import { adviceForPage } from "./advice.js";
 import type {
   AuditOptions,
   BotResult,
@@ -396,7 +397,7 @@ export async function auditUrl(
   const verdicts = results.map((bot) => decideVerdict({ bot, baseline, jsOnly, spaShell }));
   const findings = collectFindings(baseline, verdicts, jsOnly, renderError, spaShell);
 
-  return {
+  const page = {
     url,
     fetchedAt: now().toISOString(),
     httpStatus: baseline.status,
@@ -408,5 +409,7 @@ export async function auditUrl(
     jsOnly,
     verdicts,
     findings,
-  };
+  } as PageReport;
+
+  return { ...page, advice: adviceForPage(page) };
 }

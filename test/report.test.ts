@@ -67,6 +67,7 @@ function report() {
       },
     ],
     findings: [{ level: "warn", message: 'Found <img src=x onerror="alert(1)"> in a finding' }],
+    advice: ["Server-render the text in the HTML."],
   };
   return buildRunReport({ pages: [page], options, startedAt: new Date("2026-11-03T10:00:00.000Z") });
 }

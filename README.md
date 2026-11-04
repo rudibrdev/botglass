@@ -9,6 +9,23 @@ one actually receives, checks robots.txt per bot, and prints one verdict per cra
 
 No account, no API key, no dashboard, no telemetry. One command, plain HTTP.
 
+## Hand it to your agent
+
+Paste this into Claude Code, Cursor, Codex, or any agent that can run shell commands:
+
+```text
+Check whether AI crawlers can read our site. Run:
+
+  npx -y github:yardworkdev/botglass <URL> --render --compact
+
+Summarise the verdicts in two sentences and list the fixes it gives.
+After we deploy a fix, run the same command again with --baseline .botglass.json
+and tell me exactly what changed since the previous run.
+```
+
+`--compact` keeps the answer small enough to read in context; `--baseline` turns the
+second run into proof that the fix worked.
+
 ## Quick start
 
 ```bash
@@ -31,7 +48,7 @@ Real output, from `botglass https://excalidraw.com https://nextjs.org --render` 
 nextjs.org rows are trimmed):
 
 ```
-botglass 0.1.1  2 page(s), 8 bots, render on
+botglass 0.2.0  2 page(s), 8 bots, render on
 
 https://excalidraw.com/
   HTTP 200, 3 words in raw HTML, 80 words rendered
@@ -89,6 +106,9 @@ botglass <url> <url> [options]   # several URLs in one run
 --samples              Print the first missing sentences for js-dependent pages
 --json <file>          Write the full report as JSON
 --html <file>          Write a standalone HTML report
+--compact              Agent-sized output: verdicts and fixes, no page text
+--baseline <file>      Compare against a saved baseline and list what changed
+--update-baseline      Overwrite the baseline file with this run
 --fail-on <verdicts>   Comma-separated verdicts that should exit 1
 --max-js-only <0..1>   Fail when more than this share of rendered text is JS-only
 --timeout <ms>         Per-request timeout (default 15000)
@@ -134,6 +154,27 @@ and says `confidence: "heuristic"`.
 Exit codes: `0` pass, `1` gate failed, `2` usage or runtime error. `--json` writes a
 report you can archive; `--html` writes one a human can read without the tool.
 
+## Proving a fix
+
+The first run tells you what is wrong. The second run proves it changed.
+
+```bash
+botglass https://example.com --render --baseline .botglass.json   # writes it
+# ...deploy the fix...
+botglass https://example.com --render --baseline .botglass.json   # compares, then updates
+```
+
+```
+Changes since yesterday: 2
+  https://example.com/
+     ClaudeBot: ok → js-dependent
+     ClaudeBot: 80 → 3 words
+```
+
+The baseline file holds verdicts and word counts only — never page text — so it is safe to
+commit or keep in CI. `--update-baseline` overwrites it; plain `--baseline` also refreshes
+it after comparing, so the next run measures against the newest state.
+
 ## Limits (read these)
 
 - **User-Agent is a claim, not a proof.** A site that blocks real GPTBot by IP range will
@@ -154,7 +195,7 @@ report you can archive; `--html` writes one a human can read without the tool.
 
 ```bash
 npm install
-npm test              # 70 tests: unit, fixture-server integration, real CLI subprocess
+npm test              # 95 tests: unit, fixture-server integration, real CLI subprocess
 npm run build         # tsc -> dist/
 ```
 

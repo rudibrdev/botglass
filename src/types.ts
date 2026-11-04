@@ -5,6 +5,8 @@
  * A "verdict" is the single conclusion we draw for one bot on one URL.
  */
 
+import type { BaselineDiff } from "./baseline.js";
+
 export type Verdict =
   | "ok"
   | "js-dependent"
@@ -115,6 +117,8 @@ export interface PageReport {
   jsOnly: JsOnlyReport | null;
   verdicts: BotVerdict[];
   findings: Finding[];
+  /** What to change, most useful first. Empty when every bot is fine. */
+  advice: string[];
 }
 
 export interface AuditOptions {
@@ -149,6 +153,8 @@ export interface GateResult {
 export interface RunReport {
   tool: "botglass";
   version: string;
+  /** Bumped only when the JSON shape changes incompatibly. */
+  schemaVersion: number;
   startedAt: string;
   finishedAt: string;
   pages: PageReport[];
@@ -156,6 +162,8 @@ export interface RunReport {
   counts: Record<Verdict, number>;
   gate: GateResult;
   warnings: string[];
+  /** Present only when the run was compared against a baseline file. */
+  changes?: BaselineDiff | null;
 }
 
 export function emptyCounts(): Record<Verdict, number> {

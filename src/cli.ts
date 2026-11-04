@@ -12,9 +12,11 @@ import { BASELINE, BOTS, selectBots } from "./bots.js";
 import { auditUrl } from "./audit.js";
 import { parseUrlList, loadSitemap } from "./sitemap.js";
 import { createPlaywrightRenderer } from "./render.js";
-import { renderRunText, summarise } from "./report/text.js";
+import { renderRunText, renderCompactText, summarise } from "./report/text.js";
 import { renderHtml } from "./report/html.js";
 import { buildRunReport } from "./report/run.js";
+import { compactRun } from "./report/compact.js";
+import { buildBaseline, compareBaseline, parseBaseline, type BaselineDiff } from "./baseline.js";
 import { isVerdict, VERDICTS } from "./types.js";
 import type { AuditOptions, PageReport, Renderer, RunOptions, Verdict } from "./types.js";
 import { VERSION } from "./version.js";
@@ -39,6 +41,9 @@ Options
   --samples              Print the first missing sentences for js-dependent pages
   --json <file>          Write the full report as JSON
   --html <file>          Write a standalone HTML report
+  --compact              Small, agent-sized output: verdicts and fixes, no page text
+  --baseline <file>      Compare against a saved baseline and list what changed
+  --update-baseline      Overwrite the baseline file with this run
   --fail-on <verdicts>   Comma-separated verdicts that should exit 1
                          (e.g. js-dependent,ua-blocked,cloaked)
   --max-js-only <0..1>   Fail when more than this share of rendered text is
@@ -127,6 +132,9 @@ async function main(argv: string[]): Promise<void> {
         samples: { type: "boolean" },
         json: { type: "string" },
         html: { type: "string" },
+        baseline: { type: "string" },
+        "update-baseline": { type: "boolean" },
+        compact: { type: "boolean" },
         "fail-on": { type: "string" },
         "max-js-only": { type: "string" },
         timeout: { type: "string" },
@@ -262,17 +270,48 @@ async function main(argv: string[]): Promise<void> {
   };
 
   const report = buildRunReport({ pages, options: runOptions, startedAt, warnings });
+  const compact = flag("compact");
+
+  const baselinePath = str("baseline");
+  const updateBaseline = flag("update-baseline");
+  if (updateBaseline && !baselinePath) fail("--update-baseline needs --baseline <file>");
+
+  if (baselinePath) {
+    let diff: BaselineDiff | null = null;
+    let existing = null as ReturnType<typeof parseBaseline> | null;
+    try {
+      existing = parseBaseline(JSON.parse(await readFile(baselinePath, "utf8")));
+    } catch (err) {
+      if (updateBaseline) {
+        warnings.push(`replacing unusable baseline at ${baselinePath}`);
+      } else {
+        warnings.push(
+          `no usable baseline at ${baselinePath} (${err instanceof Error ? err.message : String(err)}); writing a new one`,
+        );
+      }
+    }
+    if (existing) diff = compareBaseline(existing, report);
+    if (diff) report.changes = diff;
+    await writeFile(baselinePath, `${JSON.stringify(buildBaseline(report), null, 2)}\n`, "utf8");
+    if (!flag("quiet")) {
+      process.stdout.write(
+        `${existing ? "baseline updated" : "baseline written"}: ${baselinePath}\n`,
+      );
+    }
+  }
 
   if (!flag("quiet")) {
     const color = !flag("no-color") && process.stdout.isTTY === true;
-    process.stdout.write(
-      `${renderRunText(report, { color, showSamples: flag("samples") })}\n`,
-    );
+    const text = compact
+      ? renderCompactText(report, { color })
+      : renderRunText(report, { color, showSamples: flag("samples") });
+    process.stdout.write(`${text}\n`);
   }
 
   const jsonPath = str("json");
   if (jsonPath) {
-    await writeFile(jsonPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+    const payload = compact ? compactRun(report) : report;
+    await writeFile(jsonPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
     if (!flag("quiet")) process.stdout.write(`JSON written to ${jsonPath}\n`);
   }
   const htmlPath = str("html");

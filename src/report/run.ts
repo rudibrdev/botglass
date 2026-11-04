@@ -54,6 +54,8 @@ export interface BuildRunInput {
   warnings?: string[];
 }
 
+export const RUN_SCHEMA_VERSION = 1;
+
 export function buildRunReport(input: BuildRunInput): RunReport {
   const finishedAt = input.finishedAt ?? new Date();
   const gate = evaluateGate({
@@ -64,6 +66,7 @@ export function buildRunReport(input: BuildRunInput): RunReport {
   return {
     tool: TOOL,
     version: VERSION,
+    schemaVersion: RUN_SCHEMA_VERSION,
     startedAt: input.startedAt.toISOString(),
     finishedAt: finishedAt.toISOString(),
     pages: input.pages,

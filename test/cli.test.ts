@@ -182,4 +182,84 @@ test("a usage mistake exits 2 with a message", async () => {
   const badVerdict = await botglass(`${fixture.base}/ssr`, "--fail-on", "everything");
   assert.equal(badVerdict.code, 2);
   assert.match(badVerdict.stderr, /unknown verdict/);
+
+  const orphanBaseline = await botglass(`${fixture.base}/ssr`, "--update-baseline");
+  assert.equal(orphanBaseline.code, 2);
+  assert.match(orphanBaseline.stderr, /--update-baseline needs --baseline/);
+});
+
+test("--compact gives an agent a small, text-free report", async () => {
+  const result = await botglass(
+    `${fixture.base}/client-only`,
+    "--bots",
+    "GPTBot",
+    "--delay",
+    "0",
+    "--compact",
+    "--json",
+    "compact.json",
+    "--no-color",
+  );
+  assert.equal(result.code, 0, result.stderr);
+  assert.match(result.stdout, /js-dependent/);
+  assert.match(result.stdout, /fix: /);
+  assert.doesNotMatch(result.stdout, /bot\s+status\s+words/);
+
+  const written = JSON.parse(await readFile(join(workdir, "compact.json"), "utf8"));
+  assert.equal(written.schemaVersion, 1);
+  assert.equal(written.pages[0].bots[0].verdict, "js-dependent");
+  assert.equal(written.pages[0].bots[0].text, undefined);
+  assert.ok(written.pages[0].advice.length > 0);
+  assert.ok(JSON.stringify(written).length < 4000, "compact JSON must stay small");
+});
+
+test("--baseline turns the next run into a diff", async () => {
+  const baselinePath = join(workdir, "baseline.json");
+  await writeFile(
+    baselinePath,
+    JSON.stringify({
+      schemaVersion: 1,
+      tool: "botglass",
+      createdAt: "2026-11-01T09:00:00.000Z",
+      pages: [
+        {
+          url: `${fixture.base}/client-only`,
+          httpStatus: 200,
+          words: 120,
+          bots: [{ bot: "GPTBot", verdict: "ok", words: 120, status: 200 }],
+        },
+      ],
+    }),
+    "utf8",
+  );
+
+  const result = await botglass(
+    `${fixture.base}/client-only`,
+    "--bots",
+    "GPTBot",
+    "--delay",
+    "0",
+    "--baseline",
+    baselinePath,
+    "--no-color",
+  );
+  assert.equal(result.code, 0, result.stderr);
+  assert.match(result.stdout, /Changes since/);
+  assert.match(result.stdout, /ok → js-dependent/);
+
+  const rewritten = JSON.parse(await readFile(baselinePath, "utf8"));
+  assert.equal(rewritten.pages[0].bots[0].verdict, "js-dependent");
+});
+
+test("a first run with --baseline writes the file and says so", async () => {
+  const baselinePath = join(workdir, "fresh-baseline.json");
+  const first = await botglass(`${fixture.base}/ssr`, "--bots", "GPTBot", "--delay", "0", "--baseline", baselinePath);
+  assert.equal(first.code, 0, first.stderr);
+  assert.match(first.stdout, /baseline written/);
+  const written = JSON.parse(await readFile(baselinePath, "utf8"));
+  assert.equal(written.pages[0].bots[0].verdict, "ok");
+
+  const second = await botglass(`${fixture.base}/ssr`, "--bots", "GPTBot", "--delay", "0", "--baseline", baselinePath);
+  assert.match(second.stdout, /Changes since .*: none/);
+  assert.match(second.stdout, /unchanged/);
 });
