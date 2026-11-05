@@ -7,7 +7,7 @@
  * plus one plain fetch of the homepage to see whether there is server-rendered text.
  *
  * Usage: node scripts/ai-access-index.mjs --domains /tmp/tranco.csv --limit 300 --out docs/ai-access-index
- * Writes <out>/ai-access-index.json and <out>/ai-access-index.html.
+ * Writes <out>/ai-access-index.json and <out>/index.html. HTTP usage headers are not measured.
  */
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
@@ -149,6 +149,8 @@ const answered = rows.filter((row) => row.robotsStatus && row.robotsStatus >= 20
 const homeOk = rows.filter((row) => row.homeStatus && row.homeStatus >= 200 && row.homeStatus < 300);
 
 const summary = {
+  measurementScope: "robots.txt only; HTTP Content-Usage headers not measured",
+  parserCorrected: true,
   generatedAt: new Date().toISOString(),
   tool: "botglass",
   version: VERSION,
@@ -171,20 +173,12 @@ const summary = {
     declared: rows.filter((row) => row.trainAi !== null).length,
     trainAiNo: rows.filter((row) => row.trainAi === "n").length,
     trainAiYes: rows.filter((row) => row.trainAi === "y").length,
-    trainAiUnknown: rows.filter((row) => row.trainAi === "u").length,
+    trainAiUnknown: rows.filter((row) => row.rawDeclaresContentUsage && row.trainAi === null).length,
     malformed: rows.filter((row) => row.malformed.length > 0).length,
     rawLinesSeen: rows.filter((row) => row.rawDeclaresContentUsage === true).length,
     unknownCategoryDomains: rows
       .filter((row) => (row.unknownCategories ?? []).length > 0)
       .map((row) => `${row.domain} (${(row.unknownCategories ?? []).join(", ")})`),
-  },
-  contradictions: {
-    declaresNoTrainingButReachable: rows.filter(
-      (row) => row.trainAi === "n" && aiBots.every((bot) => row.blocked[bot.name] !== true),
-    ).length,
-    declaresTrainingButBlocked: rows.filter(
-      (row) => row.trainAi === "y" && aiBots.some((bot) => row.blocked[bot.name] === true),
-    ).length,
   },
   homepages: {
     medianWords: median(homeOk.map((row) => row.words)),
@@ -198,7 +192,6 @@ summary.percentages = {
   anyAiBotBlocked: share(summary.anyAiBotBlocked, answered.length),
   allAiBotsBlocked: share(summary.allAiBotsBlocked, answered.length),
   contentUsageDeclared: share(summary.contentUsage.declared, answered.length),
-  declaresNoTrainingButReachable: share(summary.contradictions.declaresNoTrainingButReachable, answered.length),
   homepagesUnder50Words: share(summary.homepages.under50Words, homeOk.length),
 };
 
@@ -269,17 +262,19 @@ footer{margin-top:3rem;color:var(--dim);font-size:.85rem}
 <p class="lede">What the ${sum.sample.domainsRequested} most-visited domains on the web tell AI crawlers, measured on ${sum.generatedAt.slice(0, 10)}. Sample: Tranco, ${sum.sample.robotsFound} robots.txt files answered.</p>
 
 <div class="big">
-  <div><b>${sum.percentages.anyAiBotBlocked}%</b><span>block at least one AI crawler</span></div>
-  <div><b>${sum.percentages.allAiBotsBlocked}%</b><span>block every AI crawler measured</span></div>
-  <div><b>${sum.percentages.contentUsageDeclared}%</b><span>declare a Content-Usage preference</span></div>
+  <div><b>${sum.percentages.anyAiBotBlocked}%</b><span>of retrieved robots responses block at least one measured AI crawler</span></div>
+  <div><b>${sum.percentages.allAiBotsBlocked}%</b><span>of retrieved robots responses block every measured AI crawler</span></div>
+  <div><b>robots.txt only</b><span>HTTP usage headers were not measured</span></div>
   <div><b>${sum.percentages.homepagesUnder50Words}%</b><span>homepages under 50 words of text</span></div>
 </div>
 
 <h2>Blocked per crawler</h2>
 <table><thead><tr><th>Crawler</th><th>Domains</th><th>Share</th><th></th></tr></thead><tbody>${botRows}</tbody></table>
 
-<h2>Declared AI training preference</h2>
-<p>${sum.contentUsage.declared} of ${sum.sample.robotsFound} domains declare <code>Content-Usage</code>; ${sum.contentUsage.trainAiNo} say <code>train-ai=n</code>, ${sum.contentUsage.trainAiYes} say <code>y</code>, ${sum.contentUsage.trainAiUnknown} say <code>u</code>. ${sum.contradictions.declaresNoTrainingButReachable} declare <code>n</code> while still letting every AI crawler fetch the homepage. ${sum.contentUsage.malformed} lines could not be parsed.${sum.contentUsage.rawLinesSeen > 0 ? ` The ${sum.contentUsage.rawLinesSeen} site${sum.contentUsage.rawLinesSeen === 1 ? "" : "s"} that do declare something use${sum.contentUsage.rawLinesSeen === 1 ? "s" : ""} a term outside the draft vocabulary: ${esc(sum.contentUsage.unknownCategoryDomains.join("; "))}.` : ""}</p>
+<h2>Training preferences: robots.txt only</h2>
+<p><strong>Correction:</strong> This edition checked robots.txt only, not HTTP <code>Content-Usage</code> response headers. Its original “0%” headline is not a measurement of overall adoption. ${sum.parserCorrected ? "This measurement uses the corrected parser but still measures robots.txt only." : "The saved results below were produced by the original parser; raw robots.txt bodies were not retained, so parser corrections cannot be applied retroactively without a new measurement."}</p>
+<p>${sum.parserCorrected ? "The parser" : "The original parser"} recorded ${sum.contentUsage.declared} recognised <code>train-ai</code> preferences for <code>/</code> in ${sum.sample.robotsFound} retrieved robots.txt responses. ${sum.parserCorrected ? "This is a robots.txt-only result, not an overall adoption estimate." : "This is a historical result, not a corrected adoption estimate."} ${sum.contentUsage.rawLinesSeen ?? 0} responses contained a Content-Usage line; ${sum.contentUsage.unknownCategoryDomains?.length ? `unrecognised labels were recorded for ${esc(sum.contentUsage.unknownCategoryDomains.join("; "))}.` : ""}</p>
+<p>Crawl permission and usage preference are separate: allowing retrieval while declining training is valid, not a contradiction. These observations do not establish whether a crawler follows a preference.</p>
 
 <h2>How this was measured</h2>
 <ul>
@@ -288,12 +283,12 @@ footer{margin-top:3rem;color:var(--dim);font-size:.85rem}
   <li>A crawler counts as blocked when robots.txt disallows <code>/</code> for its token under the RFC 9309 rules botglass implements (longest match wins, <code>*</code> groups, crawl-delay ignored).</li>
   <li><code>Content-Usage</code> is read from the group that applies to a generic crawler for <code>/</code>, per the IETF <code>aipref</code> draft. Absent is not <code>n</code>.</li>
   <li>Word counts are the text in the raw HTML — what a crawler that does not run JavaScript receives.</li>
-  <li>Limits: robots.txt can allow a crawler that never shows up, and can block one that ignores it. This measures declared access, not observed traffic. ${sum.sample.domainsRequested - sum.sample.robotsFound} domains answered no robots.txt, usually CDN or API hosts.</li>
+  <li>Limits: robots.txt can allow a crawler that never shows up, and can block one that ignores it. This measures declared access, not observed traffic. ${sum.sample.domainsRequested - sum.sample.robotsFound} domains did not return a successful robots.txt response; failures, denied requests and missing files are not evidence of absence.</li>
 </ul>
 
 <h2>Per domain</h2>
 <div class="scroll"><table><thead><tr><th>Domain</th><th>${aiBots.map((bot) => esc(bot.name.slice(0, 4))).join(" ")}</th><th>train-ai</th><th>words</th></tr></thead><tbody>${siteRows}</tbody></table></div>
 
-<footer>Measured with botglass ${esc(sum.version)} on ${esc(sum.generatedAt)}. robots.txt evaluated for <code>/</code> per the RFC 9309 rules botglass implements; Content-Usage read from the group that applies to a generic crawler. Homepage word counts come from the raw HTML, no JavaScript. Raw data: <a href="ai-access-index.json">ai-access-index.json</a> &middot; measured with <a href="https://github.com/yardworkdev/botglass">botglass</a>.</footer>
+<footer>Measured with botglass ${esc(sum.version)} on ${esc(sum.generatedAt)}. ${sum.parserCorrected ? "robots.txt results evaluated for / by the corrected parser" : "historical robots.txt results evaluated for / by the original parser"}; Content-Usage read from the group that applies to a generic crawler. Homepage word counts come from the raw HTML, no JavaScript. Raw data: <a href="ai-access-index.json">ai-access-index.json</a> &middot; measured with <a href="https://github.com/yardworkdev/botglass">botglass</a>.</footer>
 </body></html>`;
 }

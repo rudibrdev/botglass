@@ -9,10 +9,8 @@ one actually receives, checks robots.txt per bot, and prints one verdict per cra
 
 No account, no API key, no dashboard, no telemetry. One command, plain HTTP.
 
-It also reads the new **`Content-Usage`** signal in robots.txt — the shared AI usage
-preference Anthropic, OpenAI, Google and Microsoft backed in November 2026 — shows what you
-declared for a page, and points out when the declaration contradicts what robots.txt
-actually allows.
+It also reads **`Content-Usage`** training preferences in robots.txt, separately from
+crawl permission. HTTP response-header preferences are not measured; see the scope below.
 
 ## Hand it to your agent
 
@@ -120,18 +118,21 @@ Allow: /
 Content-Usage: train-ai=n, search=y
 ```
 
-botglass reports what the page declares and, more usefully, when it disagrees with reality:
+Crawl permission and usage preferences answer different questions. Allowing retrieval
+while declining training is valid; botglass does not recommend blocking search or other
+retrieval just because `train-ai=n` is declared.
 
-```
-  USAGE train-ai=n (training not allowed), declared in User-agent: *
-  FIX   You declare train-ai=n but robots.txt still lets GPTBot and ClaudeBot fetch this page;
-        declaring the preference is not the same as blocking training, and the AI companies
-        honouring it is voluntary.
-```
+botglass reads **robots.txt only**. It does not inspect HTTP `Content-Usage` response
+headers, which are another attachment mechanism defined by the draft. A missing robots.txt
+preference therefore does not establish that the page has no preference.
 
-Declaring `train-ai=y` while robots.txt blocks the crawlers is flagged too, because then
-nobody can read the page you said they could train on. A value that is not `y`, `n` or `u` is
-reported as unreadable rather than guessed at. `--compact` carries it as `trainAi`.
+The audit and index resolve usage for the **generic baseline crawler**, not separately for
+every bot. Bot-specific Content-Usage groups may therefore differ from the displayed value.
+The resolver follows the attachment draft's worked path examples and separates crawl
+permission from usage. Explicit preference tokens in the current vocabulary are `y` and `n`;
+other values mean unknown, not “contact the owner”. `--compact` carries the resolved
+robots.txt training preference as `trainAi`. This is a draft-specific implementation, not
+a claim of complete Structured Fields conformance or provider compliance.
 
 ## Crawlers it imitates
 
@@ -243,7 +244,7 @@ it after comparing, so the next run measures against the newest state.
 
 ```bash
 npm install
-npm test              # 119 tests: unit, fixture-server integration, real CLI subprocess
+npm test              # 140 tests: unit, fixture-server integration, real CLI subprocess
 npm run build         # tsc -> dist/
 ```
 

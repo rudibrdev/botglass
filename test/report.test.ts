@@ -104,6 +104,35 @@ test("the text report shows one row per bot with its verdict", () => {
   assert.doesNotMatch(text, /\u001b\[/, "no escape codes when color is off");
 });
 
+test("the text report shows usage diagnostics even with no explicit train-ai", () => {
+  const run = report();
+  const page = run.pages[0];
+  assert.ok(page);
+
+  page.usage = {
+    signals: [],
+    trainAi: null,
+    source: "User-agent: *",
+    malformed: [],
+    unknownCategories: ["ai"],
+    unknownValues: [],
+  };
+  assert.match(renderRunText(run, { color: false }), /unknown category "ai"/);
+
+  page.usage = {
+    signals: [],
+    trainAi: null,
+    source: "User-agent: *",
+    malformed: ["train-ai = n"],
+    unknownCategories: [],
+    unknownValues: ["train-ai"],
+  };
+  const text = renderRunText(run, { color: false });
+  assert.match(text, /train-ai has no explicit y or n preference; crawlers treat it as unknown/);
+  assert.match(text, /could not parse "train-ai = n"/);
+  assert.doesNotMatch(text, /ask/);
+});
+
 test("the bot column widens for long crawler names", () => {
   const run = report();
   const page = run.pages[0];

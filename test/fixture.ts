@@ -57,6 +57,8 @@ User-agent: *
 Allow: /
 Disallow: /private
 Content-Usage: train-ai=n, search=y
+Content-Usage: /ssr train-ai=y
+Content-Usage: /private train-ai=y
 `;
 
 /** robots.txt that declares training allowed. */

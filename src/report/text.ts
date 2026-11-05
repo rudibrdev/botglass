@@ -80,7 +80,14 @@ export function renderPageText(page: PageReport, options: TextReportOptions = {}
     }
   }
 
-  if (page.usage && (page.usage.trainAi !== null || page.usage.malformed.length > 0)) {
+  const unknownValues = page.usage?.unknownValues ?? [];
+  if (
+    page.usage &&
+    (page.usage.trainAi !== null ||
+      page.usage.malformed.length > 0 ||
+      page.usage.unknownCategories.length > 0 ||
+      unknownValues.length > 0)
+  ) {
     lines.push("");
     if (page.usage.trainAi !== null) {
       lines.push(
@@ -88,10 +95,15 @@ export function renderPageText(page: PageReport, options: TextReportOptions = {}
       );
     }
     for (const category of page.usage.unknownCategories) {
-      lines.push(`  ${paint("USAGE", "\u001b[33m", color)} unknown category "${category}" (expected train-ai, ai-use or search)`);
+      lines.push(`  ${paint("USAGE", "\u001b[33m", color)} unknown category "${category}" (expected train-ai, ai-use or search; ignored)`);
+    }
+    for (const category of unknownValues) {
+      lines.push(
+        `  ${paint("USAGE", "\u001b[33m", color)} ${category} has no explicit y or n preference; crawlers treat it as unknown`,
+      );
     }
     for (const bad of page.usage.malformed) {
-      lines.push(`  ${paint("USAGE", "\u001b[33m", color)} could not read "${truncate(bad, 60)}"`);
+      lines.push(`  ${paint("USAGE", "\u001b[33m", color)} could not parse "${truncate(bad, 60)}"`);
     }
   }
 

@@ -100,6 +100,25 @@ function compile(pattern: string): CompiledPattern {
   return { re: new RegExp(`^${source}${anchored ? "$" : ""}`), weight };
 }
 
+/** True when a robots path pattern matches this path, using Allow/Disallow syntax. */
+export function robotsPatternMatches(pattern: string, path: string): boolean {
+  return compile(pattern).re.test(path);
+}
+
+/**
+ * Specificity of a path pattern: its literal octets, excluding `*` wildcards
+ * and a trailing `$`. RFC 9309 ranks the longest matching prefix this way.
+ */
+export function robotsPatternLength(pattern: string): number {
+  const anchored = pattern.endsWith("$");
+  const body = anchored ? pattern.slice(0, -1) : pattern;
+  let octets = 0;
+  for (const ch of body) {
+    if (ch !== "*") octets += Buffer.byteLength(ch, "utf8");
+  }
+  return octets;
+}
+
 /** Pick the groups that apply to a robots token (exact match beats `*`). */
 function applicableGroups(groups: RobotsGroup[], token: string): RobotsGroup[] {
   const needle = token.toLowerCase();

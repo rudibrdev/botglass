@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.2 — 2026-11-05
+
+- Separate crawl permission from usage preferences: allowing retrieval while declining
+  training is valid, not a contradiction. Removed advice that implied otherwise.
+- Correct robots.txt usage path resolution against the IETF attachment draft's examples;
+  prefer matching Content-Usage paths rather than inheriting Allow/Disallow scope.
+- Scope the index to robots.txt only; HTTP Content-Usage headers were not measured.
+  Remove the overall-adoption headline and unsupported explanations for failed responses.
+- Preserve the original November JSON measurements unchanged and label the re-rendered
+  page as historical parser output, not a retrospective corrected measurement.
+
 ## 0.4.1 — 2026-11-04
 
 - `Content-Usage` categories outside the draft vocabulary (`train-ai`, `ai-use`, `search`) are

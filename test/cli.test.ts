@@ -57,6 +57,22 @@ test("a single URL prints a report and exits 0", async () => {
   assert.match(result.stdout, /Totals: 1 ok/);
 });
 
+test("Content-Usage path rules are resolved for the audited page", async () => {
+  const specific = await botglass(`${fixture.base}/ssr`, "--bots", "GPTBot", "--delay", "0", "--no-color");
+  assert.equal(specific.code, 0, specific.stderr);
+  assert.match(specific.stdout, /USAGE train-ai=y \(training allowed\), declared in User-agent: \*/);
+
+  const inherited = await botglass(`${fixture.base}/thin`, "--bots", "GPTBot", "--delay", "0", "--no-color");
+  assert.equal(inherited.code, 0, inherited.stderr);
+  assert.match(inherited.stdout, /USAGE train-ai=n \(training not allowed\), declared in User-agent: \*/);
+
+  // /private has its own Content-Usage rule, but it is Disallowed, so no
+  // preference is implied for it.
+  const disallowed = await botglass(`${fixture.base}/private`, "--bots", "GPTBot", "--delay", "0", "--no-color");
+  assert.equal(disallowed.code, 0, disallowed.stderr);
+  assert.doesNotMatch(disallowed.stdout, /USAGE/);
+});
+
 test("--json and --html write the files they promise", async () => {
   const json = join(workdir, "report.json");
   const html = join(workdir, "report.html");

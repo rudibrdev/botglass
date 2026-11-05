@@ -34,36 +34,23 @@ function usageAdvice(page: PageReport): string[] {
   const usage = page.usage;
   if (!usage) return [];
   const out: string[] = [];
-  const blocked = page.verdicts.filter((v) => v.verdict === "robots-blocked").map((v) => v.bot);
 
   if (usage.unknownCategories.length > 0) {
     out.push(
-      `Content-Usage uses "${usage.unknownCategories[0]}=…", which is not in the draft vocabulary (train-ai, ai-use, search); crawlers may ignore it.`,
+      `Content-Usage uses the label "${usage.unknownCategories[0]}", which is not in the draft vocabulary (train-ai, ai-use, search); crawlers ignore unknown labels, so this declaration has no effect.`,
     );
   }
 
   if (usage.malformed.length > 0) {
     out.push(
-      `robots.txt has a Content-Usage line we cannot read ("${usage.malformed[0]}"): the value must be one of y, n or u, written category=value.`,
+      `robots.txt has a Content-Usage value we cannot parse ("${usage.malformed[0]}"): write a structured-field dictionary with an explicit y or n, for example "train-ai=n".`,
     );
   }
 
-  if (usage.trainAi === "y" && blocked.length > 0) {
-    out.push(
-      `This page says training is allowed (Content-Usage: train-ai=y) but robots.txt disallows ${listBots(blocked)}; crawlers that obey robots.txt will never see it.`,
-    );
-  } else if (usage.trainAi === "n") {
-    const allowedBots = page.verdicts.filter((v) => v.verdict !== "robots-blocked").map((v) => v.bot);
-    if (allowedBots.length > 0) {
-      out.push(
-        `You declare train-ai=n but robots.txt still lets ${listBots(allowedBots)} fetch this page; declaring the preference is not the same as blocking training, and the AI companies honouring it is voluntary.`,
-      );
-    }
-  } else if (usage.trainAi === "u") {
-    out.push(
-      "Content-Usage: train-ai=u asks crawlers to check with you rather than deciding; make it explicit (y or n) if you want a reliable answer.",
-    );
-  }
+  // Content-Usage states a usage preference, not crawl permission. Allowing a
+  // fetch while declaring train-ai=n (or blocking one crawler while declaring
+  // train-ai=y for another) is not a contradiction; those are separate stages.
+  // Values other than y and n leave the category unknown, not "ask first".
 
   return out;
 }
